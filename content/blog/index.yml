@@ -1,0 +1,16 @@
+title: Blog
+seo:
+  page_description: ""
+  canonical_url:
+  featured_image:
+  featured_image_alt:
+  author_twitter_handle:
+  open_graph_type:
+  no_index: true
+  
+background_color: '#ffffff'
+background_image: ''
+items_per_page : 1
+related_post : true
+
+content_blocks: []

@@ -1,0 +1,46 @@
+title: Lavilash&Brow Demo
+seo:
+  page_description:
+  canonical_url:
+  featured_image:
+  featured_image_alt:
+  author_twitter_handle:
+  open_graph_type:
+  no_index: false
+content_blocks:
+      # ------------------Hero-------------------------
+
+  - _block_name: section/breadcum
+    status: true
+    background_image: /images/hero-bg.png
+    background_color: '#fcc5c0'
+    image: /images/contact_img.jpg
+    image_alt : ''
+    title: 'Contact Us'
+    height: '438px'
+
+  - _block_name: contact/hero
+    status: true
+    title: 'Contact Us'
+    heading: 'Get In Touch <br>  With Us'
+    color: '#FCC5C0'
+    desc: 'Experience Exceptional Beauty Services: Lavilash & Brow is Your Destination!'
+    list_item:
+    -   image: /images/user-clock-solid.png
+        label: 'Mon-Sat: 10:00 AM – 8:00 PM'
+        link: '#'
+        
+    -   image: /images/envelopes-bulk-solid.png
+        label: 'lavilashbrow@gmail.com'
+        link: '#'
+
+    -   image: /images/phone-solid.png
+        label:  '+1 617 - 595 - 2065'
+        link: '#'
+
+    -   image: /images/map-pin-solid.png
+        label: '627 Commonwealth Avenue Boston, MA 02215'              
+        link: '#'
+  
+
+

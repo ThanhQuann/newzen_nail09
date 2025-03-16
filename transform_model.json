@@ -1,0 +1,96 @@
+{
+    "service": {
+        "block": {
+            "_block_name": "services/item",
+            "status": true,
+            "image": "/images/service1.png",
+            "alt": "Nails",
+            "background_color": "#FFFFFF",
+            "title": "MANICURE",
+            "desc": ""
+        },
+        "wrapper": "listItem",
+        "page_path": "content/service.yml",
+        "key_reverse": "item_reverse",
+        "reverse_default": true,
+        "product": {
+            "price": {
+                "external_key": "product_price"
+            },
+            "label": {
+                "external_key": "product_name"
+            },
+            "desc": {
+                "external_key": "product_description"
+            }
+        },
+        "category": {
+            "title": {
+                "external_key": "product_group_name"
+            },
+            "desc": {
+                "external_key": "product_group_description"
+            }
+        }
+    },
+    "gallery": {
+        "type": "category",
+        "block": {
+            "_block_name": "section/gallery",
+            "status": true,
+            "background_color": "#FFFFFF",
+            "title": "Gallery",
+            "title_button": "View more"
+        },
+        "wrapper": "gallery",
+        "page_path": "content/ideas.yml",
+        "category": {
+            "label": {
+                "external_key": "category_title"
+            }
+        },
+        "wrapper_item": "item",
+        "item": {
+            "image": {
+                "external_key": "image"
+            },
+            "image_alt": {
+                "external_key": "image_alt"
+            }
+        }
+    },
+    "banner": {
+        "block": {
+            "_block_name": "section/hero",
+            "status": true
+        },
+        "wrapper": "banner_slides",
+        "page_path": "content/index.yml",
+        "items": {
+            "image": {
+                "external_key": "logo_src"
+            },
+            "image_alt": {
+                "external_key": "image_alt"
+            }
+        }
+    },
+    "footer": {},
+    "coupon": {
+        "block": {
+            "_block_name": "coupons/hero",
+            "status": true,
+            "background_color": "#ffffff"
+        },
+        "wrapper": "listImg",
+        "page_path": "content/coupons.yml",
+        "items": {
+            "image": {
+                "external_key": "image_src"
+            },
+            "image_alt": {
+                "external_key": "image_alt"
+            }
+        }
+    }
+}

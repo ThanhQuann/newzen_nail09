@@ -1,0 +1,207 @@
+title: Lavilash&Brow Demo
+seo:
+  page_description:
+  canonical_url:
+  featured_image:
+  featured_image_alt:
+  author_twitter_handle:
+  open_graph_type:
+  no_index: false
+content_blocks:
+      # ------------------Hero-------------------------
+
+  - _block_name: section/hero
+    status: true
+    background_image: /images/hero-bg.png
+    image: /images/hero-img.png
+    image_alt : ''
+    title: 'Experience the Magic of Lavilash Extensions'
+    image_lines: /images/hero-lines.png
+    image_lines_alt: ''
+    image_rounded: /images/hero-rounded.png
+    image_rounded_alt: ''
+    image_blue_rounded: /images/hero-blue-rounded.png
+    image_double_rounded: /images/double-rounded.png
+    content: 'Transform Your Look with Lavilash’s Premium Eyelash Services '
+    button: 
+      is_show: true
+      open_new_tab: false
+      text: 'Book Now'
+      link: '/#'
+      background_color: '#FCC5C0'
+      color: '#fff'
+      # ------------------Service-------------------------
+
+  - _block_name: section/treatment
+    status: true
+    background: '#fff'
+    list_treatment:
+      - title: 'Classic Lashes'
+        desc: 'Classic lashes are a type of eyelash extensions where one individual lash extension is glued onto one natural lash. This creates a natural, enhanced look by adding length and thickness to the lashes.'
+        image: /images/hero-face.jpg
+        image_alt: ''
+
+      - title: 'Hybrid Lashes'
+        desc: 'Hybrid lashes are a combination of classic and volume lash extensions. This technique involves applying a mix of individual lash extensions and handmade volume fans onto each natural lash, resulting in a more textured and full appearance.'
+        image: /images/hero-face1.jpg
+        image_alt: ''
+
+      - title: 'Volume Lashes'
+        desc: 'Volume lashes are a type of eyelash extensions where multiple thin lash extensions are fanned out and applied onto one natural lash, creating a full and dramatic effect. This technique is ideal for those who have sparse lashes or desire a more glamorous look.'
+        image: /images/hero-face2.jpg
+        image_alt: ''
+    content: 'Transform Your Look with Lavilash’s Premium Eyelash <br> Services '
+    button: 
+      is_show: true
+      open_new_tab: false
+      text: 'Book Now'
+      link: '/#'
+      background_color: '#FCC5C0'
+      color: '#fff'
+# ------------------About-------------------------
+  - _block_name: section/about
+    status: true
+    color: "#FCC5C0"
+    top_image_large: '-20%'
+    top_image_leaf: '-20%'
+    top_image_dot1: '-20%'
+    bottom_image_dot2: '-7%'
+    list_img:
+        image_large: /images/hero-face3.jpg
+        image_large_alt: 'hero-face3'
+        image_big: /images/hero-face4.jpg
+        image_big_alt: 'hero-face4'
+        image_leaf: /images/hero-leafs.png
+        image_leaf_alt: 'hero-leaf'
+        image_dot1: /images/hero-dots-1.png
+        image_dot1_alt: 'hero-dots-1'
+        image_dot2: /images/hero-dots-2.png
+        image_dot2_alt: 'hero-dots-2'
+    session: 'About Us'
+    title: 'Lavilash Extension Salon'
+    desc: 'Lavilash Extension Salon is a boutique lash studio located in the heart of Boston, Massachusetts. The salon offers a variety of high-quality eyelash extensions services, including classic, hybrid, and volume lash extensions. Their team of experienced lash technicians is dedicated to providing clients with customized lash designs that suit their individual needs and preferences.'
+    button: 
+      is_show: true
+      text: 'Learn More'
+      link: '/#'
+      background_color: '#FCC5C0'
+      color: '#fff'
+      open_new_tab: false
+       
+
+# ------------------Stats-------------------------
+  - _block_name: section/stats
+    status: true
+    color: "#FCC5C0"
+    background_color: "#FCC5C0"
+    image_background: /images/hero-banner.jpg
+    list_count_stats:
+         stats_user: 1000
+         stats_trainning: 8
+         stats_treatment: 65
+         stats_product: 74
+
+    list_stats:
+         stats_user: 'Satisfied Users'
+         stats_trainning: 'Trained Experts'
+         stats_treatment: 'Nice Treatment'
+         stats_procuduct: 'Procedures'
+
+# ------------------service-------------------------
+
+  - _block_name: section/service
+    status: true
+    color: "#FCC5C0"
+    heading: 'Our Services'
+    title: 'Popular Treatments'
+    image: '/images/service-dots.png'
+    list_service:
+      - title: 'Lash Services'
+        img: /images/hero-eye.png
+        desc: 'We include a free consultation on style, curve, length, and design to help you choose between our six different lash extension styles.<br> Our lashes are made of safe, high-quality, and cruelty-free materials.'
+     
+      - title: 'Brows Services'
+        img: /images/hero-eye1.png
+        desc: 'Membership: $50 for 6 months / $75 for 12 months.<br> Please present your membership information in order to be eligible for the membership prices.'
+
+      - title: 'Hair Removal'
+        img: /images/hero-eye2.png
+        desc: 'Our salon provides professional full body waxing services for both men and women. We use both hard wax and soft wax (strip wax), giving you a long-lasting effect of stubble-free and smooth skin.'  
+    button: 
+      is_show: true
+      open_new_tab: false
+      text: 'Learn more'
+      link: '/#'
+      background_color: '#FCC5C0'
+      color: '#fff'
+    
+
+# ------------------Review-------------------------
+
+  - _block_name: section/review
+    status: true
+    color: "#FCC5C0"
+    background_color: '#C4C4C4'
+    desc : ' <b> Google </b>&nbsp rating score:&nbsp<b>4.7</b>&nbsp of 5,&nbspbased on &nbsp<b> 65 reviews </b>'
+    background_image: /images/review_bg.png
+    image_double_heart: /images/hero-love.png
+    image_leaf: /images/leaf-3.png
+    image_logo: /images/Google-logo.png
+    image_caret: /images/caret-down-solid.png
+    list_review:
+      - image_acount: /images/hero-account.png
+        username: 'Z V'
+        time: '2023-05-22'
+        star: 5
+        desc: 'I love getting my lashes done here!! They sometimes offer deals that are worth checking out if you want a discount, but my girl Margarita is THE BEST!!!! I get soooo many compliments on my lashes, more than I ever have in the last 2 years of getting them checking out if you want a discount, but my girl Margarita is THE BEST!!!! I get soooo many compliments on my lashes, more than I ever have in the last 2 years of getting them! '
+
+      - image_acount: /images/hero-account1.png
+        username: 'Isabella Monroe'
+        time: '2023-05-22'
+        star: 5
+        desc: 'Alex is very thorough and does a great job with my lashes. I only go to him for my lashes! Lavilash Extension Salon is a boutique lash studio located in the heart of Boston, Massachusetts.'
+
+      - image_acount: /images/hero-account2.png
+        username: 'Lauren Sikoski'
+        time: '2023-04-19'
+        star: 5
+        desc: 'Great service great price overall amazing'
+
+      - image_acount: /images/hero-account3.png
+        username: 'Robyn Denise'
+        time: '2023-04-08'
+        star: 5
+        desc: 'Katie does a wonderful job! She’s friendly and has great attention to detail. I love my lashes!'  
+
+      - image_acount: /images/hero-account4.png
+        username: 'Miki Matrician'
+        time: '2023-04-08'
+        star: 5
+        desc: 'Katie is wonderful!'
+
+      - image_acount: /images/hero-account5.png
+        username: 'Tara Reagan'
+        time: '2023-04-04'
+        star: 5
+        desc: 'Amazing job on hybrid full set!'
+
+      - image_acount: /images/hero-account6.png
+        username: 'Brianna'
+        time: '2023-02-12'
+        star: 5
+        desc: 'I''ve been going to Eye Lush since November 2021, and recently I got my mom to get lash extensions with them too. She wasnt sure how she'
+
+      - image_acount: /images/hero-account7.png
+        username: 'Sydney Kaye'
+        time: '2023-01-28'
+        star: 5
+        desc: 'I love getting my lashes done here!! They sometimes offer deals that are worth checking out if you want a discount, but my girl Margarita is'
+
+      - image_acount: /images/hero-account8.png
+        username: 'Sarah Torzillo'
+        time: '2023-01-21'
+        star: 5
+        desc: 'I have tried different lash salons throughout Boston and Eye Lush is just my favorite. The salon is in a great location and the prices are'  
+
+
+    

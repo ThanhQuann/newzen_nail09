@@ -1,0 +1,70 @@
+title: Lavilash&Brow Demo
+seo:
+  page_description:
+  canonical_url:
+  featured_image:
+  featured_image_alt:
+  author_twitter_handle:
+  open_graph_type:
+  no_index: false
+content_blocks:
+
+  - _block_name: service/breadcum
+    status: true
+    background_image: /images/hero-bg.png
+    background_color: '#fcc5c0'
+    image: /images/service-image.jpg
+    image_alt : ''
+    title: 'Services'
+    height: '400px'
+
+  - _block_name: section/service
+    status: true
+    color: "#FCC5C0"
+    heading: 'Our Services'
+    title: 'Popular Treatments'
+    image: '/images/service-dots.png'
+    list_service:
+      - title: 'Lash Services'
+        img: /images/hero-eye.png
+        desc: 'We include a free consultation on style, curve, length, and design to help you choose between our six different lash extension styles.<br> Our lashes are made of safe, high-quality, and cruelty-free materials.'
+     
+      - title: 'Brows Services'
+        img: /images/hero-eye1.png
+        desc: 'Membership: $50 for 6 months / $75 for 12 months.<br> Please present your membership information in order to be eligible for the membership prices.'
+
+      - title: 'Hair Removal'
+        img: /images/hero-eye2.png
+        desc: 'Our salon provides professional full body waxing services for both men and women. We use both hard wax and soft wax (strip wax), giving you a long-lasting effect of stubble-free and smooth skin.'  
+    button: 
+      is_show: true
+      open_new_tab: false
+      text: 'Learn more'
+      link: '/#'
+      background_color: '#FCC5C0'
+      color: '#fff'
+    
+  - _block_name: service/hero
+    status: true
+    color: "#FCC5C0"
+    background_color: '#C4C4C4'
+    background_image: /images/review_bg.png
+    image_double_heart: /images/hero-love.png
+    image_leaf: /images/leaf-3.png
+    list_review:
+      - image_acount: /images/service.jpg
+        username: 'John Doe'
+        position: 'CEO'
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo'
+     
+      - image_acount: /images/service.jpg
+        username: 'John Doe'
+        position: 'CEO'
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo'
+
+      - image_acount: /images/service.jpg
+        username: 'John Doe'
+        position: 'CEO'
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo'
+
+

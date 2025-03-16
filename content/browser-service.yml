@@ -1,0 +1,78 @@
+title: Lavilash&Brow Demo
+seo:
+  page_description:
+  canonical_url:
+  featured_image:
+  featured_image_alt:
+  author_twitter_handle:
+  open_graph_type:
+  no_index: false
+content_blocks:
+
+  - _block_name: section/eyelash
+    status: true
+    background_image: /images/cropped-shot-of-woman-with-makeup-brush-for-eyebrows.jpg
+    background_color: '#fcc5c0'
+    heading: 'Brow Services'
+    color: '#fff'
+    
+  - _block_name: section/treatmentbrow
+    status: true
+    list_item:
+     -   title: 'Brow Tints'
+         image: /images/brow-tint.png
+         desc: 'Enhance your brows to make them appear darker and fuller through dyeing them.'
+
+     -   title: 'Brow Laminations'
+         image: /images/brow-lamination.png
+         desc: 'Create beautiful, uniform brows through a straightening and lifting chemical solution.'
+
+     -   title: 'Brow Shaping'
+         image: /images/brow-shaping.png
+         desc: 'Define your brows through tweezing and waxing hair removal services..'
+
+                  
+    image_dot1: /images/dots-large1.png
+    image_dot1_alt: 'hero-dots-2'
+
+
+
+
+  - _block_name: section/Browservice
+    status: true
+    title: 'Brow Services'
+    image: /images/brow-tint.png
+    desc: 'Membership: $50 for 6 months / $75 for 12 months. <br> Please present your membership information in order to be eligible for the membership prices.'                  
+    desc2: 'Waxing services are not recommended for clients using Retin-A©, Accutane©, products containing Alpha Hydroxy©, or other skin thinning treatments.'
+    service: 'Service'
+    regular: 'Regular'
+    member: 'Membership'
+    list_item:
+     -   title: 'Brow Tints'
+         price: '$20'
+         member: '$'
+
+     -   title: 'Brow Lamination'
+         price: '$100'
+         member: '$'
+
+     -   title: 'Brow Tweeze'
+         price: '$23'
+         member: '$'
+
+     -   title: 'Brow Tweeze & Tint'
+         price: '$35'
+         member: '$'             
+              
+     -   title: 'Brow Lamination with Tweeze & Tint'
+         price: '$135'
+         member: '$'
+
+     -   title: 'Brow Wax'
+         price: '$20'
+         member: '$' 
+     -   title: 'Brow Wax & Tint'
+         price: '$35'
+         member: '$'
+
+     

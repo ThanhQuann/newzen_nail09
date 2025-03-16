@@ -1,0 +1,117 @@
+title: Lavilash&Brow Demo
+seo:
+  page_description:
+  canonical_url:
+  featured_image:
+  featured_image_alt:
+  author_twitter_handle:
+  open_graph_type:
+  no_index: false
+content_blocks:
+
+  - _block_name: section/eyelash
+    status: true
+    background_image: /images/hot-hair-removal-depilation-female-skin-routine-2022-11-09-06-50-09-utc-scaled.jpg
+    background_color: '#fcc5c0'
+    heading: 'Hair Removal'
+    color: '#54595F'
+
+  - _block_name: section/treatmenthair
+    status: true
+    list_item:
+     -   title: 'facial removal'
+         desc: 'Enhance your brows to make them appear darker and fuller through dyeing them.'
+
+     -   title: 'Hair Removal Services'
+         desc: 'Membership: $50 for 6 months / $75 for 12 months. <br> Unlimited Brazilian: $600 per year.Please present your membership information in order to be eligible for the membership prices.  <br> Waxing services are not recommended for clients using Retin-A©, Accutane©, products containing Alpha Hydroxy©, or other skin thinning treatments. '
+
+     -   title: 'Body Hair Removal'
+         desc: 'Our salon provides professional full body waxing services for both men and women. We use both hard wax and soft wax (strip wax), giving you a long-lasting effect of stubble-free and smooth skin.'
+
+                  
+    image_dot2: /images/dots-large2.png
+    image_dot2_alt: 'hero-dots-2'
+
+    
+
+  - _block_name: section/Hairremoval
+    status: true
+    title_face: 'Facial Hair Removal'
+    service_face: 'WAXING - FACE'
+    regular_face: 'REGULAR'
+    member_face: 'Membership'
+    list_item_face:
+     -   title: 'Brows/Tint'
+         price: '$20'
+         member: '$15'
+
+     -   title: 'Brow Tweeze'
+         price: '$23'
+         member: '$15'
+
+     -   title: 'Brow Wax & Tint'
+         price: '$35'
+         member: '$25'
+
+     -   title: 'Chin/Nostrils/Upper/Lower Lip'
+         price: '$12'
+         member: '$10'             
+              
+     -   title: 'Mini Face (lip,chin,brows)'
+         price: '$40'
+         member: '$30'
+
+     -   title: 'Face (lip,chin, brows, sideburns)'
+         price: '$50'
+         member: '$35'
+
+    title_body: 'Body Hair Removal'
+    service_body: 'WAXING - FACE'
+    regular_body: 'REGULAR'
+    member_body: 'Membership'
+    list_item_body:
+     -   title: 'Brows/Tint'
+         price: '$20'
+         member: '$15'
+
+     -   title: 'Brow Tweeze'
+         price: '$23'
+         member: '$15'
+
+     -   title: 'Brow Wax & Tint'
+         price: '$35'
+         member: '$25'
+
+     -   title: 'Chin/Nostrils/Upper/Lower Lip'
+         price: '$12'
+         member: '$10'             
+              
+     -   title: 'Mini Face (lip,chin,brows)'
+         price: '$40'
+         member: '$30'
+
+     -   title: 'Face (lip,chin, brows, sideburns)'
+         price: '$50'
+         member: '$35' 
+    title_waxing_men: 'Men Waxing'
+    service_waxing_men: 'WAXING - FACE'
+    regular_waxing_men: 'REGULAR'
+    member_waxing_men: 'Membership'
+    list_item_waxing_men:
+     -   title: 'Back Wax with Shoulder'
+         price: '$20'
+         member: '$15'
+
+     -   title: 'Chest (Upper)'
+         price: '$23'
+         member: '$15'
+
+     -   title: 'Chest & Abdomen'
+         price: '$35'
+         member: '$25'
+
+     -   title: 'Back Neck'
+         price: '$12'
+         member: '$10'             
+              
+ 

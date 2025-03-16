@@ -1,0 +1,226 @@
+title: Lavilash&Brow Demo
+seo:
+  page_description:
+  canonical_url:
+  featured_image:
+  featured_image_alt:
+  author_twitter_handle:
+  open_graph_type:
+  no_index: false
+content_blocks:
+
+  - _block_name: section/eyelash
+
+    status: true
+    background_image: /images/eyelash-extension-procedure-1-2.jpg
+    background_color: '#fcc5c0'
+    heading: 'Eyelash Extension'
+    color: '#fff'
+
+  - _block_name: section/treatmenteye
+    status: true
+    list_item:
+     -   title: 'Classic'
+         image: /images/eye-classic.png
+         desc: 'Elevate your natural lashes with the original lash extension technique.'
+
+     -   title: 'Hybrid'
+         image: /images/eye-hybird.png
+         desc: 'Experience both techniques or transition from classic lashes to volume lashes.'
+
+     -   title: 'volume'
+         image: /images/eye-volume.png
+         desc: 'Embrace a healthier and longer-lasting look with thin, light volume lashes.'
+
+     -   title: 'Mega'
+         image: /images/eye-mega.png
+         desc: 'Enjoy a full, bold look with this striking megavolume lash extension technique.'                 
+    image_dot1: /images/dots-large1.png
+    image_dot1_alt: 'hero-dots-2'
+    image_dot2: /images/dots-large2.png
+    image_dot2_alt: 'hero-dots-2'
+
+
+  - _block_name: section/lashextension
+    status: true
+    title_lash: 'Lash Extensions'
+    image_caret_right: /images/caret-right1-solid.svg
+    image_caret_down: /images/caret-down-solid.svg
+    desc_lash: 'We include a free consultation on style, curve, length, and design to help you choose between our six different lash extension styles. Our lashes are made of safe, high-quality, and cruelty-free materials.'
+    list_item:
+     -   title: 'Classic'
+         desc: "<p>One extension is glued to one natural lash with 60-70% coverage.</p>"
+         desc1: "<p>Artist 1: $225<br>Artist 2: $250<br>Artist 3: $275</p>"
+     -   title: 'Classic - Deluxe'
+         desc: " <p>A mixture of classic and volume techniques with 80-90% coverage of natural lashes.</p>"
+         desc1: "<p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>   "   
+
+
+     -   title: 'Hybird'
+         desc: "<p>One extension is glued to one natural lash with 60-70% coverage.</p>"
+         desc1: "<p>Artist 1: $225<br>Artist 2: $250<br>Artist 3: $275</p>"
+
+     -   title: 'Volume'
+         desc: "<p>One extension is glued to one natural lash with 60-70% coverage.</p>"
+         desc1: "<p>Artist 1: $225<br>Artist 2: $250<br>Artist 3: $275</p>"  
+
+     -   title: 'Volume - Deluxe'
+         desc: >-
+          <p>A mixture of classic and volume techniques with 80-90% coverage of natural lashes.</p>
+          <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>  
+
+
+     -   title: 'Mega volume'
+         desc: "<p>One extension is glued to one natural lash with 60-70% coverage.</p>"
+         desc1: "<p>Artist 1: $225<br>Artist 2: $250<br>Artist 3: $275</p>"  
+    
+   
+    title_classic: 'Lash Refills'
+    desc_classic: 'Looking to refresh your lashes? Eyelash extensions can sometimes last up to 8 weeks, but it is common to get a touch up to maintain a full lash set.'
+    desc_classic2: 'For existing EYE LUSH clients, please make a refill appointment based on when you received your set.<br>New client refills are for clients coming from other salons.'
+    server_classic: 'Classic Refills'
+    list_item_classic:
+     -   title: 'After 1 Week'
+         desc: >-
+          <p>Artist 1: $225<br>Artist 2: $250<br>Artist 3: $275</p>
+     -   title: 'After 2 Week'
+         desc: >-
+          <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>      
+     -   title: 'After 3 Week'
+         desc: >-
+            <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>  
+
+     -   title: 'After 4 Week'
+         desc: >-
+            <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>  
+
+     -   title: 'After 5 Week'
+         desc: >-
+          <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>  
+
+
+     -   title: 'New Client Refill'
+         desc: >-
+          <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>  
+    
+    server_hybrid: 'Hybird Refills'
+    list_item_hybrid:
+     -   title: 'After 1 Week'
+         desc: >-
+          <p>Artist 1: $225<br>Artist 2: $250<br>Artist 3: $275</p>
+     -   title: 'After 2 Week'
+         desc: >-
+          <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>      
+     -   title: 'After 3 Week'
+         desc: >-
+            <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>  
+
+     -   title: 'After 4 Week'
+         desc: >-
+            <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>  
+
+     -   title: 'After 5 Week'
+         desc: >-
+          <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>  
+
+
+     -   title: 'New Client Refill'
+         desc: >-
+          <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>  
+
+    server_volume: 'Volume Refills'
+    list_item_volume:
+     -   title: 'After 1 Week'
+         desc: >-
+          <p>Artist 1: $225<br>Artist 2: $250<br>Artist 3: $275</p>
+     -   title: 'After 2 Week'
+         desc: >-
+          <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>      
+     -   title: 'After 3 Week'
+         desc: >-
+            <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>  
+
+     -   title: 'After 4 Week'
+         desc: >-
+            <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>  
+
+     -   title: 'After 5 Week'
+         desc: >-
+          <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>  
+
+
+     -   title: 'New Client Refill'
+         desc: >-
+          <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>  
+
+
+    server_megavolume: 'Mega Volume Refills'
+    list_item_megavolume:
+     -   title: 'After 1 Week'
+         desc: >-
+          <p>Artist 1: $225<br>Artist 2: $250<br>Artist 3: $275</p>
+     -   title: 'After 2 Week'
+         desc: >-
+          <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>      
+     -   title: 'After 3 Week'
+         desc: >-
+            <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>  
+
+     -   title: 'After 4 Week'
+         desc: >-
+            <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>  
+
+     -   title: 'After 5 Week'
+         desc: >-
+          <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>  
+
+
+     -   title: 'New Client Refill'
+         desc: >-
+          <p>Artist 1: $225 <br>Artist 2: $250<br>Artist 3: $275</p>  
+  - _block_name: section/eyelashservice
+    status: true
+    title_lashTint: 'Lash RefillsLash Lifts & Tints'
+    image: /images/brow-tint.png
+    desc_lashTint: 'A lash L will dye and darken your natural lashes to create a balanced, effortless look.<br> A lash lift, or lash perm, will curl and set your natural lashes with a special perming solution and roller.'                  
+    desc2_lashTint: 'We use safe, high-quality, award-winning materials to enhance your natural beauty.'
+    desc_link: 'Click here to view our work..'
+    link: 'https://www.youtube.com/shorts/-62EiN8nscE'
+    service_lashTint: 'Serivce'
+    regular_lashTint: 'Time'
+    member_lashTint: 'Price'
+    list_item_lashTint:
+     -   title: 'Lash Tint'
+         price: '15 minutes'
+         member: '$40'
+
+     -   title: 'Lash Lift'
+         price: '60 Minutes'
+         member: '$100'
+
+     -   title: 'Lash Lift & Tint'
+         price: '75 Minutes'
+         member: '$120'
+    title_other_service: 'Supplemental Services'
+    image_other_service: /images/brow-tint.png
+    desc_other_service: 'Description of services. Include any common information regarding the procedures.'               
+    service_other_service: 'Service'
+    regular_other_service: 'Time'
+    member_other_service: 'Price'
+    list_item_other_service:
+     -   title: 'Lash Removal'
+         price: '15 minutes'
+         member: '$60'
+
+     -   title: 'Lash Removal with New Set'
+         price: '15 Minutes'
+         member: '$30'
+
+     -   title: 'Patch Test'
+         price: '15 Minutes'
+         member: '$10'
+
+    
+
+
+     

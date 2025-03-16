@@ -1,0 +1,39 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Hero Section
+  description: Hero Section
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  status: true
+  image: /images/banner.png
+  image_alt : ''
+  title: 'Organic Fresh Food'
+  content: 'Nơi mang lại hương vị thiên nhiên, hương vị của vùng đất đầy gió Lào và cát trắng đến với từng bữa ăn của bạn!'
+  button: 
+    is_show: true
+    open_new_tab: false
+    text: 'XEM SẢN PHẨM'
+    link: '/#'
+    background_color: '#84BD00'
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  image:
+    label: Banner
+    type: image
+  title:
+    label: Title
+    type: markdown
+  content:
+    type: markdown
+    label: Content
+  button.background_color:
+    type: color
+    label: Background color

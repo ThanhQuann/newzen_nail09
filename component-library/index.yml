@@ -1,0 +1,153 @@
+paths:
+  collections: content
+  data: data
+  static: public
+  uploads: public/images
+collections_config:
+  data:
+    path: data/
+    disable_add: true
+    disable_add_folder: true
+  pages:
+    path: content
+    glob:
+      - content/*.yml
+    url: "/[slug]"
+    output: true
+    icon: wysiwyg
+    _enabled_editors:
+      - visual
+    schemas:
+      page:
+        name: New Page
+        path: schemas/page.yml
+
+  blog:
+    path: content/blog/
+    output: true
+    url: "/blog/[...slug]"
+    _enabled_editors:
+      - content
+      - visual
+    schemas:
+      blog_post:
+        name: New Blog Post
+        path: schemas/post.yml
+        hide_extra_inputs: false
+        remove_extra_inputs: false
+
+_inputs:
+  _path:
+    type: text
+    label: Page path
+    description:
+  title:
+    type: text
+    label: Page title
+    description:
+  img:
+    type: image
+    label: Image
+    description:
+  description:
+    type: text
+    label: Page description
+    description:
+  description_simple:
+    type: markdown_simple
+    label: Description simple
+    description:
+  desc:
+    type: markdown_simple
+    label: Description simple
+    description:
+  layout:
+    type: text
+    label: Page layout
+    description:
+  thumbImg.image:
+    type: image
+    label: Thumbnail image
+    description:
+  featuredImg.image:
+    type: image
+    label: featured Image
+  seo.title:
+    type: text
+    label: Seo title
+    description:
+  seo.description:
+    type: textarea
+    label: Seo description
+    description:
+  seo.url:
+    type: text
+    label: Seo url
+    description:
+  seo.image:
+    type: image
+    label: Seo image
+    description:
+  seo.no_index:
+    type: checkbox
+    label: Seo no index
+    description:
+  seo.page_description:
+    label: Page Description
+    type: textarea
+    description: If empty, defaults to the description set in the Site SEO data file
+  seo.canonical_url:
+    label: Canonical URL
+    type: text
+    description: If empty, defaults to the URL of the page
+  seo.featured_image:
+    label: Featured Image
+    type: image
+    description: If empty, defaults to the image set in the Site SEO data file
+  seo.author_twitter_handle:
+    label: Author Twitter Handle
+    type: text
+  seo.open_graph_type:
+    label: Open Graph Type
+    type: text
+  content_blocks:
+    label: Content blocks
+    description:
+  image:
+    type: image
+    label: Image
+  open_new_tab:
+    type: toggle
+    label: Open New Tab
+  is_show:
+    type: toggle
+    label: Show/Hide Button
+  item_prop:
+    type: text
+    label: Item prop (This field is used for SEO - Don't allow edits unless you know about SEO)
+  background_color:
+    type: color
+    label: Background Color
+  status:
+    type: toggle
+    label: Active Section
+  background_image:
+    type: image
+    label: Background Image
+  items_per_page:
+    type: number
+    label: Number Of Posts Per Page
+    description: The number of posts per page must be greater than 1. If less than 1, the default will be 6
+  related_post:
+    type: toggle
+    label: Active Related Post
+    description: This option will show/hide related posts by tag
+  publish: 
+    label: Publish Blog
+    type: toggle
+  date: 
+    label: Publish Day
+    type: date
+  created_at:
+    label: Publish Day
+    type: hidden

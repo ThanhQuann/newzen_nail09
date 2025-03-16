@@ -1,0 +1,35 @@
+{
+    "en": {
+      "business_type": "https://schema.org/BeautySalon",
+      "price_range": "$$",
+      "BaseURL": "http://example.org",
+      "site_title": "The Nail Lab",
+      "favicon_icon": "",
+      "favicon_image": "",
+      "description": "A polished, marketing website template built with Eleventy",
+      "twitter_image": "",
+      "twitter_site": "@twitter_site",
+      "image": "",
+      "_inputs": {
+        "description": {
+          "type": "textarea"
+        },
+        "twitter_site": {
+          "type": "twitter"
+        },
+        "favicon_icon": {
+          "type": "image"
+        },
+        "favicon_image": {
+          "type": "image"
+        },
+        "twitter_image": {
+          "type": "image"
+        },
+        "image": {
+          "type": "image"
+        }
+      }
+    }
+  }
+  

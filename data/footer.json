@@ -1,0 +1,146 @@
+{
+  "en":{
+    "background": "#fff",
+    "background_copyright": "#f8f8f8",
+    "logo": "/images/hero-footer.png",
+    "logo_alt": "Logo alt",
+    "color_header": "#407088",
+    "color_text":"#54595F",
+    "description": "At LaviLash Salon, our mission is to enhance our clients’ natural beauty by providing exceptional lash extensions services using premium-quality products and cutting-edge techniques.",
+    "title": "Experience the Art of Beauty",
+    "para": "Transform Your Lashes and Brows at Lavilash & Brow",
+    "background_form":"#fff",
+    "button": {
+      "is_show":true,
+      "text": "Book Now",
+      "background_color":"#FCC5C0",
+      "link":"/#",
+      "color": "#fff"
+    },
+    "contact": [
+      {
+        "is_show": true,
+        "label": "demo@gmail.com",
+        "link": "/#",
+        "open_new_tab": false,
+        "image": "/images/MdiEmail.svg",
+        "image_alt": ""
+      },
+      {
+        "is_show": true,
+        "label": "DTsmart, Go Vap, Viet Nam",
+        "link": "/#",
+        "open_new_tab": false,
+        "image": "/images/MdiMapMarker.svg",
+        "image_alt": ""
+      }
+    ],
+    "bussiness": {
+      "label": "Business Hour",
+      "list_bussiness": [
+        {
+          "label": "Monday – Saturday :",
+          "link": "/#",
+          "open_new_tab": false
+        },
+        {
+          "label": "10 AM - 8 PM",
+          "link": "/#",
+          "open_new_tab": false
+        },
+        {
+          "label": "Sunday Closed",
+          "link": "/#",
+          "open_new_tab": false
+        }
+      ]
+    },
+    "company": {
+      "label": "Company",
+      "list_company": [
+        {
+          "label": "Home",
+          "link": "/#",
+          "open_new_tab": false
+        },
+        {
+          "label": "About Us",
+          "link": "/#",
+          "open_new_tab": false
+        },
+        {
+          "label": "Careers",
+          "link": "/#",
+          "open_new_tab": false
+        },
+        {
+          "label": "Contact Us",
+          "link": "/#",
+          "open_new_tab": false
+        },
+        {
+          "label": "FAQ",
+          "link": "/#",
+          "open_new_tab": false
+        }
+      ]
+    },
+    "info": {
+      "label": "Informations",
+    "list_info": [
+        {
+          "image": "/images/building-solid.svg",
+          "label": "Boston, MA",
+          "link": "/#",
+          "open_new_tab": false
+          
+        },
+        {
+          "image": "/images/enveloper-solid.svg",
+          "label": "Lavilashbrow@gmail.com",
+          "link": "/#",
+          "open_new_tab": false
+        },
+        {
+          "image": "/images/phone-solid.png",
+          "label": "+1 617 - 595 - 2065",
+          "link": "/#",
+          "open_new_tab": false
+        },
+        {
+          "image": "/images/map-pin-solid.png",
+          "label": "627 Commonwealth Ave, Boston, MA 02215",
+          "link": "/#",
+          "open_new_tab": false
+        }
+      ]
+    },
+  
+    "text_bottom_footer": "LaviLash All Copyright Reserved. Designed by SmartingGoods",
+    "back_top_botom_footer": "Back To Top",
+
+    "_inputs": {
+      "background": {
+        "type": "color"
+      },
+      "background_copyright": {
+        "type": "color"
+      },
+      "logo": {
+        "type": "image"
+      },
+      "contact[*].image": {
+        "type": "image"
+      },
+      "payment[*].image": {
+        "type": "image"
+      },
+      "description": {
+        "type": "markdown"
+      },
+      "text_bottom_footer": {
+        "type": "markdown"
+      }
+    }
+  }
+}

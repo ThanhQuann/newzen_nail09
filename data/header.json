@@ -1,0 +1,109 @@
+{
+  "en":{ 
+    "logo": "/images/hero-title.png",
+    "logo_alt": "Logo alt",
+    "background_color" : "#FFFFFF",
+    "header_top":{
+      "background_color" : "#183029",
+      "phone" :{
+        "image" : "/images/icon_phone.png",
+        "image_alt" : "",
+        "label": "(+84) 909 878 182"
+      },
+      "social":[
+        {
+          "image" : "/images/icon_fb.png",
+          "image_alt" : "FaceBook",
+          "link":"/#",
+          "open_new_tab": true
+        },
+        {
+          "image" : "/images/icon_yt.png",
+          "image_alt" : "FaceBook",
+          "link":"/#",
+          "open_new_tab": true
+        }
+      ]
+
+    },
+    "items": [
+      {
+        "link": "/",
+        "text": "Home",
+        "open_new_tab": false
+      },
+      {
+        "link": "/services",
+        "text": "Services",
+        "open_new_tab": false,
+        "item_child": [
+          {
+            "link": "/eyelash-extension",
+            "text": "eyelash-extension",
+            "open_new_tab": false
+          },
+          {
+            "link": "/browser-service",
+            "text": "browser-service",
+            "open_new_tab": false
+          }
+          ,
+          {
+            "link": "/hair-removal",
+            "text": "hair-removal",
+            "open_new_tab": false
+          }
+        ]
+      },
+      {
+        "link": "/booking",
+        "text": "Booking",
+        "open_new_tab": false
+      },
+      {
+        "link": "/about",
+        "text": "About US",
+        "open_new_tab": false
+      },
+      {
+        "link": "/contact",
+        "text": "Contact US",
+        "open_new_tab": false
+      } 
+    ],
+    "search":{
+      "is_show" : true,
+      "title": "Search..."
+    },
+    "button":{
+      "text": "Book Now",
+      "is_show": true,
+      "link":"/#",
+      "open_new_tab": true
+    },
+    "_inputs": {
+      "icon": {
+        "type": "image"
+      },
+      "logo": {
+        "type": "image"
+      },
+      "search":{
+        "type": "text",
+        "label": "Placeholder"
+      },
+      "background_color": {
+        "type": "color"
+      },
+      "header_top.background_color": {
+        "type": "color"
+      },
+      "header_top.phone.image": {
+        "type": "image"
+      },
+      "header_top.social[*].image": {
+        "type": "image"
+      }
+    }
+  }
+}
