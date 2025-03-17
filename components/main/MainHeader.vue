@@ -534,8 +534,8 @@ ul {
   margin-top: 90px; /* Giữ khoảng cách với top */
 
 }
-  .button-menu {
-  position: absolute;
+.button-menu {
+  // position: absolute;
   z-index: 100000; /* Cao hơn cả .nav-mobile */
 }
 /* Khi menu mở -> trượt xuống */
