@@ -43,12 +43,12 @@
         <!-- content right -->
     
         <div class="col-md-6 col-sm-12 position-relative cus-mb">
-          <img class="wd-ipm position-relative z-2" style="object-fit: cover" :src="block.image" :alt="block.alt" />
-              <div class="animation">
-                  <img style="top:20px" class="icon-blue_rounded position-absolute" :src="block.image_blue_rounded" alt="Icon alt" />
-                  <img style="width: 124px;top:2%;right:0;" class="icon-rounded-two position-absolute" :src="block.image_double_rounded" alt="Icon alt" />
-
+          <img class="wd-ipm position-relative z-2" style="object-fit: cover;pointer-events:none" :src="block.image" :alt="block.alt" />
+              <div class="animation" @mousemove="handleHover" @mouseleave="resetTransform" >
+                  <img style="top:20px"  class="icon-blue_rounded position-absolute" :style="imageStyle" :src="block.image_blue_rounded" alt="Icon alt" />
               </div>      
+              <img style="width: 124px;top:2%;right:0;" class="icon-rounded-two position-absolute z-2" :src="block.image_double_rounded" alt="Icon alt" />
+
               <img class="icon-rounded" :src="block.image_rounded" alt="Icon alt" />
         </div>
       </div>
@@ -92,9 +92,45 @@ onMounted(() => {
     observer.observe(item);
   });
 });
+
+const x = ref(0);
+const y = ref(0);
+
+const imageStyle = computed(() => ({
+  transform: `translate(${x.value}px, ${y.value}px)`,
+  transition: "transform 0.3s ease-in-out",
+}));
+
+const handleHover = (event: MouseEvent) => {
+  const target = event.currentTarget as HTMLElement;
+  const width = target.clientWidth;
+  const height = target.clientHeight;
+  const offsetX = event.offsetX;
+  const offsetY = event.offsetY;
+
+  if (offsetX < width / 3) x.value = 10; // Hover từ trái → đẩy phải
+  else if (offsetX > (2 * width) / 3) x.value = -10; // Hover từ phải → đẩy trái
+  else x.value = 0;
+
+  if (offsetY < height / 3) y.value = 10; // Hover từ trên → đẩy xuống
+  else if (offsetY > (2 * height) / 3) y.value = -10; // Hover từ dưới → đẩy lên
+  else y.value = 0;
+};
+
+const resetTransform = () => {
+  x.value = 0;
+  y.value = 0;
+};
+
 </script>
 
 <style lang="scss" scoped>
+.animation{
+  top: 0;
+  width: 636px;
+  height: 100%;
+  position: absolute;
+}
 
 .icon-blue_rounded{
   width: 636px;
@@ -137,7 +173,7 @@ onMounted(() => {
   position: relative;
   bottom: 220px;
   left: -130px;
-  z-index: -1;
+  z-index: 1;
 }
 @media (max-width: 1024px){
   .my__container{
@@ -152,7 +188,6 @@ onMounted(() => {
  .wd-ipm{
     width: 514px;
     height: 551px;
-   
   }
   .icon-line{
     bottom: 2%;

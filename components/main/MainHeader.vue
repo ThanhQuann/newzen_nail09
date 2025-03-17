@@ -35,10 +35,11 @@
           <!-- Button menu mobile -->
           <div
             style="color: rgb(252, 197, 192)"
-            class="d-lg-block d-xxl-none d-block"
+            class="d-lg-block d-xxl-none d-block button-menu"
             @click="handleMenu()"
           >
-            <i
+             <i
+              v-if="!isOpen"
               class="bi bi-list text-black"
               style="
                 font-size: 30px;
@@ -46,53 +47,57 @@
                 color: rgb(252, 197, 192) !important;
                 margin-right:10px;
               "
-            ></i>
+            ></i> 
+            <img v-if="isOpen" class="img-close" style="width: 30px;height:30px;margin-right:10px" :src="headerData.logo_close" alt="">
           </div>
           <div v-show="checkMobile" :class="['nav-mobile', { active: isOpen }]">
       <div class="nav-mobile-left flex-1">
         <nav>
-          <ul
-            class="d-flex flex-column justify-content-center list-unstyled pt-4 "
-            style="padding-left:20px"
-          >
-            <li
-              v-for="item in headerData.items"
-              :key="item.link"
-              :class="{ active_mobile: isActiveMenuItem(item.link) }"
-              class="my-2"
+      <ul class="d-flex flex-column justify-content-center list-unstyled pt-4 u" >
+        <li v-for="(header, index) in headerData.items" 
+            :key="index" 
+            class="menu-mobile-item position-relative "
+            @click="toggleSubMenu(index)"
+            :class="{ active: isActiveMenuItem(header.link) }"
+
+            
             >
-              <NuxtLink
-                class="text-black d-block font__size__base text-decoration-none h-100"
-                style="line-height: 40px"
-                :title="item.text"
-                :target="item?.open_new_tab ? '_blank' : ''"
-                :to="item.link"
-              >
-                {{ item.text }}
-              </NuxtLink>
-            </li>
-            <div v-if="LANGUAGES.length > 1" class="dropdown d-block d-lg-none">
-              <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                {{ country }}
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li
-                  @click="updateCountry(item.value)"
-                  v-for="(item, index) in countries"
-                  :key="index"
+          <NuxtLink
+            class="text-black d-block font__size__base text-decoration-none h-100"
+            style="line-height: 40px;padding-left:20px;"
+            :title="header.text"
+            :target="header?.open_new_tab ? '_blank' : ''"
+            :to="header.link"
+          >
+            {{ header.text }}
+            <img
+                  :class="{ active: isActiveMenuItem(header.link) }"
+                  style="padding-left: 10px"
+                  v-if="header?.item_child && header.item_child.length > 0"
+                  src="/images/caret-down-solid.png"
+                  alt="Dropdown"
+                  class="nav-icon"
+                />
+          </NuxtLink>
+
+          <!-- Submenu Mobile -->
+          <div v-if="openSubmenus[index]" class="submenu-mobile">
+            <ul>
+              <li v-for="(child, index) in header.item_child" :key="index">
+                <NuxtLink
+                  :to="child.link"
+                  :title="child.text"
+                  :target="child?.open_new_tab ? '_blank' : ''"
+                  class="submenu-mobile-item "
                 >
-                  <a class="dropdown-item">{{ item.name }}</a>
-                </li>
-              </ul>
-            </div>
-          </ul>
-        </nav>
+                  {{ child.text }}
+                </NuxtLink>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
       </div>
       <div class="background-nav-mobile" @click="handleMenu()"></div>
          </div>
@@ -177,7 +182,6 @@ const checkMobile = ref(false)
 const blogStore = useCounterStore()
 const search = ref(blogStore.title)
 
-// i18n
 const countries = LANGUAGES.map((lang: any) => {
   return {
     name: lang.label,
@@ -280,15 +284,22 @@ const isActiveMenuItem = (link: any) => {
 }
 const handleMenu = () => {
   isOpen.value = !isOpen.value
+  if (!isOpen.value) {
+    Object.keys(openSubmenus).forEach((key) => {
+      openSubmenus[Number(key)] = false;
+    });
+  }
 }
 
 watch(
   () => route.fullPath,
   () => {
-    isOpen.value = false
+    isOpen.value = false;
+    Object.keys(openSubmenus).forEach((key) => {
+      openSubmenus[Number(key)] = false;
+    });
   }
-)
-
+);
 const checkScreenSize = () => {
   checkMobile.value = window.innerWidth <= 1024
 }
@@ -296,9 +307,23 @@ onMounted(() => {
   checkScreenSize()
   window.addEventListener('resize', checkScreenSize)
 })
+
+const openSubmenus = reactive<{ [key: number]: boolean }>({})
+
+const toggleSubMenu = (index: number) => {
+  openSubmenus[index] = !openSubmenus[index] || false
+}
+
 </script>
 
 <style lang="scss" scoped>
+.nav-icon {
+  transition: filter 0.3s ease-in-out;
+}
+
+.nav-icon.active {
+  filter: brightness(0) invert(1); // Chuyển thành màu trắng
+}
 .nav-icon {
   filter: grayscale(100%) brightness(0) invert(40%);
   transition: filter 0.3s ease;
@@ -341,6 +366,11 @@ onMounted(() => {
   }
    
 }
+.submenu-mobile-item{
+  text-transform: uppercase;
+  color:#33373d;
+
+}
 
 .pl {
   padding-right: 50px;
@@ -363,7 +393,12 @@ onMounted(() => {
 .width {
   width: 1140px;
 }
-
+.menu-mobile-item.active > a {
+  background-color: #FCC5C0 !important; /* Màu giống desktop */
+  width: 100%;
+  font-weight: 500;
+  color:#fff !important;
+}
 .active_mobile {
   & a {
     color: #54595f !important;
@@ -402,8 +437,6 @@ onMounted(() => {
   background: white;
   // border: 1px solid #ddd; /* Thêm border để dễ thấy */
   z-index: 1000;
-  
- 
 }
 ul {
   padding-left: 0;
@@ -419,6 +452,16 @@ ul {
   color: var(--color-text2);
   background: transparent; /* Đảm bảo nền mặc định */
   transition: background 0.3s;
+}
+.submenu-mobile{
+  // display: none;
+  padding-left: 30px;
+}
+.submenu-mobile ul {
+  list-style: none;
+}
+.submenu-mobile li {
+  padding-top: 15px;
 }
 .submenu li:hover {
   background: #fcc5c0;
@@ -470,6 +513,11 @@ ul {
     background: transparent; /* Xóa nền mờ */
     overflow: hidden;
     transition: height 0.5s ease-in-out;
+    pointer-events: none;
+    &.active {
+    opacity: 1;
+    pointer-events: auto; /* Khi menu mở, cho phép click */
+  }
 }
 
 /* Khi menu mở */
@@ -486,21 +534,27 @@ ul {
   margin-top: 90px; /* Giữ khoảng cách với top */
 
 }
-
+  .button-menu {
+  position: absolute;
+  z-index: 100000; /* Cao hơn cả .nav-mobile */
+}
 /* Khi menu mở -> trượt xuống */
 .nav-mobile.active .nav-mobile-left {
   transform: translateY(0);
 }
 
-/* Nút nền tối khi menu mở */
-.background-nav-mobile {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  cursor: pointer;
-}
+// .background-nav-mobile {
+//   position: fixed;
+//   width: 100%;
+//   height: 100%;
+//   top: 0;
+//   left: 0;
+//   cursor: pointer;
+//   background: rgba(0, 0, 0, 0.5);
+//   pointer-events: none;
+//   z-index: 9998; /* Đảm bảo nhỏ hơn nav-mobile-left */
+// }
+
 
 }
 @media (max-width: 1024px) {

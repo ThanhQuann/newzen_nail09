@@ -2,6 +2,7 @@
   "en":{ 
     "logo": "/images/hero-title.png",
     "logo_alt": "Logo alt",
+    "logo_close": "/images/xmark-solid.svg",
     "background_color" : "#FFFFFF",
     "header_top":{
       "background_color" : "#183029",
