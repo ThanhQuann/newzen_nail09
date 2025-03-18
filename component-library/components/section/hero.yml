@@ -24,7 +24,7 @@ blueprint:
     is_show: true
     open_new_tab: false
     text: 'Book Now'
-    link: '/#'
+    link: '/about'
     background_color: '#FCC5C0'
     color: '#fff'
 

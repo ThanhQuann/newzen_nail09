@@ -35,7 +35,7 @@
           <!-- Button menu mobile -->
           <div
             style="color: rgb(252, 197, 192)"
-            class="d-lg-block d-xxl-none d-block button-menu"
+            class="d-lg-block d-xxl-none  button-menu"
             @click="handleMenu()"
           >
              <i
@@ -74,7 +74,7 @@
                   :class="{ active: isActiveMenuItem(header.link) }"
                   style="padding-left: 10px"
                   v-if="header?.item_child && header.item_child.length > 0"
-                  src="/images/caret-down-solid.png"
+                  :src="headerData.image_caret_down"
                   alt="Dropdown"
                   class="nav-icon"
                 />
@@ -124,8 +124,8 @@
                   :class="{ active: isActiveMenuItem(header.link) }"
                   style="padding-left: 10px"
                   v-if="header?.item_child && header.item_child.length > 0"
-                  src="/images/caret-down-solid.png"
-                  alt="Dropdown"
+                  :src="headerData.image_caret_down"
+                  :alt="headerData.alt_caret"
                   class="nav-icon"
                 />
                 <div
@@ -478,6 +478,15 @@ ul {
   color: inherit;
 }
 
+
+.header {
+  z-index: 20;
+  left: 0;
+  width: 100%;
+}
+.container-xl {
+  max-width: 1140px;
+}
 @media only screen and (max-width: 1024px) {
   .form-search {
     width: 100% !important;
@@ -490,7 +499,7 @@ ul {
     border: none;
     border-bottom: 1px solid var(--color-primary);
     transition: border-color 400ms ease-in-out, width 200ms ease-in-out,
-      opacity 400ms ease-in-out;
+    opacity 400ms ease-in-out;
   }
   .form-search:focus {
     cursor: text;
@@ -543,26 +552,13 @@ ul {
   transform: translateY(0);
 }
 
-// .background-nav-mobile {
-//   position: fixed;
-//   width: 100%;
-//   height: 100%;
-//   top: 0;
-//   left: 0;
-//   cursor: pointer;
-//   background: rgba(0, 0, 0, 0.5);
-//   pointer-events: none;
-//   z-index: 9998; /* Đảm bảo nhỏ hơn nav-mobile-left */
-// }
-
-
-}
-@media (max-width: 1024px) {
 }
 @media only screen and (max-width: 1024px) {
   .hidden-nav {
     display: none !important;
   }
+
+
 }
 @media only screen and (max-width: 768px) {
   // .nav-mobile {
@@ -575,15 +571,15 @@ ul {
     display: none !important;
   }
 }
-@media (max-width: 568px) {
+
+@media (min-width: 1025px) {
+  .button-menu{
+    display: none !important;
+  }
+  .img-close{
+    display: none !important;
+  }
+ 
 }
 
-.header {
-  z-index: 20;
-  left: 0;
-  width: 100%;
-}
-.container-xl {
-  max-width: 1140px;
-}
 </style>

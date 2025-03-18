@@ -14,6 +14,7 @@ blueprint:
   desc : ' <b> Google </b>&nbsp rating score:&nbsp<b>4.7</b>&nbsp of 5,&nbspbased on &nbsp<b> 65 reviews </b>'
   background_image: /images/review_bg.png
   image_double_heart: /images/hero-love.png
+  image_alt: 'image-alt'
   image_leaf: /images/leaf-3.png
   image_logo: /images/Google-logo.png
   image_caret: /images/caret-down-solid.png
@@ -23,6 +24,8 @@ blueprint:
         time: '2023-05-22'
         star: 5
         desc: 'I love getting my lashes done here!! They sometimes offer deals that are worth checking out if you want a discount, but my girl Margarita is THE BEST!!!! I get soooo many compliments on my lashes, more than I ever have in the last 2 years of getting them checking out if you want a discount, but my girl Margarita is THE BEST!!!! I get soooo many compliments on my lashes, more than I ever have in the last 2 years of getting them! '
+        image_alt: 'image-alt'
+
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   status:
@@ -43,6 +46,9 @@ _inputs:
   image_double_heart:
     label: Double Heart Image
     type: image
+  image_alt:
+    label: Image alt
+    type: text
   image_leaf:
     label: Leaf Image
     type: image

@@ -15,7 +15,7 @@
               <div class="" v-for="item, index in block.list_item" :key="index">
               <NuxtLink class="text-center text-reset cus-hover" v-if="item.link" :to="item.link"
                 :target="item?.open_new_tab ? '_blank' : ''">
-                <img  class="" :src="item.image" :alt="item.label" >
+                <img v-if="item.image" class="" :src="item.image" :alt="item.label" >
                 {{ item.label }}
               </NuxtLink>
               </div>

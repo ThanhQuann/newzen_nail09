@@ -41,6 +41,7 @@ content_blocks:
     status: true
     title: 'Brow Services'
     image: /images/brow-tint.png
+    image_alt: 'image-alt'
     desc: 'Membership: $50 for 6 months / $75 for 12 months. <br> Please present your membership information in order to be eligible for the membership prices.'                  
     desc2: 'Waxing services are not recommended for clients using Retin-A©, Accutane©, products containing Alpha Hydroxy©, or other skin thinning treatments.'
     service: 'Service'

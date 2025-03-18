@@ -13,30 +13,26 @@ content_blocks:
   - _block_name: section/breadcum
     status: true
     background_image: /images/hero-bg.png
-    background_color: '#fcc5c0'
+    background_color: '#fdfaf9'
     image: /images/about_eyelush.png
-    image_alt : ''
+    image_alt : 'image-alt'
     title: 'About Us'
 
 # ------------------About-------------------------
   - _block_name: section/about
     status: true
     color: "#FCC5C0"
-    top_image_large: '-22%'
-    top_image_leaf: '-22%'
-    top_image_dot1: '-25%'
-    bottom_image_dot2: '-8%'
     list_img:
         image_large: /images/about_eyelush2.png
-        image_large_alt: 'hero-face3'
+        image_large_alt: 'image-alt'
         image_big: /images/about_eyelush1.png
-        image_big_alt: 'hero-face4'
+        image_big_alt: 'image-alt'
         image_leaf: /images/hero-leafs.png
-        image_leaf_alt: 'hero-leaf'
+        image_leaf_alt: 'image-alt'
         image_dot1: /images/hero-dots-1.png
-        image_dot1_alt: 'hero-dots-1'
+        image_dot1_alt: 'image-alt'
         image_dot2: /images/hero-dots-2.png
-        image_dot2_alt: 'hero-dots-2'
+        image_dot2_alt: 'image-alt'
     session: 'About Us'
     title: 'About Lavi Lash Salon'
     desc: 'Lavilash and Brow Page is a renowned beauty salon and spa that specializes in providing exceptional eyelash and eyebrow services. With a strong reputation for delivering stunning results, they have gained a loyal clientele and are considered a go-to destination for enhancing the beauty of one’s eyes and brows.'

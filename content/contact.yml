@@ -13,12 +13,10 @@ content_blocks:
   - _block_name: section/breadcum
     status: true
     background_image: /images/hero-bg.png
-    background_color: '#fcc5c0'
+    background_color: '#fdfaf9'
     image: /images/contact_img.jpg
     image_alt : ''
     title: 'Contact Us'
-    height: '438px'
-
   - _block_name: contact/hero
     status: true
     title: 'Contact Us'

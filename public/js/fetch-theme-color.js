@@ -30,6 +30,13 @@ fs.readFile("./data/theme.json", "utf8", function (err, dataFile) {
           "--color-primary: " + replacementString + ";"
         );
       }
+      if (dataFile.color_text1) {
+        const replacementString = dataFile.color_text1;
+        replaced = replaced.replace(
+          /\--color-text1: .*/g,
+          "--color-text1: " + replacementString + ";"
+        );
+      }
       if (dataFile.color_anchor) {
         const replacementString = dataFile.color_anchor;
         replaced = replaced.replace(

@@ -10,7 +10,7 @@
                     <div class="service_item" :class="{item: index === 1 || hoverIndex === index }" @mouseover = "hoverIndex = index" @mouseleave="hoverIndex = -1">
                     <div class="d-flex flex-column mb-3 pd">
                       <div  class="text-center d-flex flex-column justify-content-center align-items-center pt-3">
-                            <img class="img-cus" :src="item.image" alt="service">
+                            <img class="img-cus" :src="item.image" :alt="item.image_alt">
                             <h3 class="fs-4 p-3">{{ item.title.toUpperCase() }}</h3>
                             <div class="p-2">{{ item.desc }}</div>
                     </div>

@@ -42,6 +42,7 @@ content_blocks:
   - _block_name: section/lashextension
     status: true
     title_lash: 'Lash Extensions'
+    image_alt: 'image-alt'
     image_caret_right: /images/caret-right-solid.svg
     image_caret_down: /images/caret-down-solid.svg
     desc_lash: 'We include a free consultation on style, curve, length, and design to help you choose between our six different lash extension styles. Our lashes are made of safe, high-quality, and cruelty-free materials.'

@@ -44,7 +44,7 @@
                   ? block.image_caret_down
                   : block.image_caret_right
               "
-              alt="icon"
+              :alt="block.image_alt"
             />
             {{ item.title }}
           </div>
@@ -109,7 +109,8 @@
                       ? block.image_caret_down
                       : block.image_caret_right
                   "
-                  alt="icon"
+                   :alt="block.image_alt"
+
                 />
                 {{ item.title }}
               </div>
@@ -144,7 +145,7 @@
                       ? block.image_caret_down
                       : block.image_caret_right
                   "
-                  alt="icon"
+                  :alt="block.image_alt"
                 />
                 {{ item.title }}
               </div>
@@ -183,7 +184,7 @@
                       ? block.image_caret_down
                       : block.image_caret_right
                   "
-                  alt="icon"
+                  :alt="block.image_alt"
                 />
                 {{ item.title }}
               </div>
@@ -218,7 +219,7 @@
                       ? block.image_caret_down
                       : block.image_caret_right
                   "
-                  alt="icon"
+                  :alt="block.image_alt"
                 />
                 {{ item.title }}
               </div>

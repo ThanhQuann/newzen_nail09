@@ -7,16 +7,18 @@
     :style="{ backgroundImage: `url(${block.background_image})` }"
   >
     <div class="section_hero container-xl">
-      <div  class="row reverse-mb">
+      <div class="row reverse-mb">
         <!-- content left -->
-        <div style="height: 650px;" 
-        class="col-md-6 col-sm-12 position-relative d-flex flex-wrap align-content-center align-items-center cus-title">
+        <div
+          style="height: 650px"
+          class="col-md-6 col-sm-12 position-relative d-flex flex-wrap align-content-center align-items-center cus-title"
+        >
           <div
-            class="title mb-md-3 mb-2 ckeditor-custom font__RED  pd-mb"
+            class="title mb-md-3 mb-2 ckeditor-custom font__RED pd-mb"
             v-html="block.title"
           ></div>
           <div
-            class=" mb-2 ckeditor-custom color-content"
+            class="mb-2 ckeditor-custom color-content"
             v-html="block.content"
           ></div>
           <NuxtLink
@@ -25,7 +27,7 @@
             :to="block.button.link"
             :target="block.button?.open_new_tab ? '`_blank`' : ''"
             :style="{ backgroundColor: block.button.background_color }"
-            style="display: inline-flex !important;"
+            style="display: inline-flex !important"
           >
             <span
               class="button-text text-decoration-underline"
@@ -37,19 +39,40 @@
             class="icon-line"
             :src="block.image_lines"
             style=""
-            alt="Icon alt"
+            :alt="block.image_alt"
           />
         </div>
         <!-- content right -->
-    
-        <div class="col-md-6 col-sm-12 position-relative cus-mb">
-          <img class="wd-ipm position-relative z-2" style="object-fit: cover;pointer-events:none" :src="block.image" :alt="block.alt" />
-              <div class="animation" @mousemove="handleHover" @mouseleave="resetTransform" >
-                  <img style="top:20px"  class="icon-blue_rounded position-absolute" :style="imageStyle" :src="block.image_blue_rounded" alt="Icon alt" />
-              </div>      
-              <img style="width: 124px;top:2%;right:0;" class="icon-rounded-two position-absolute z-2" :src="block.image_double_rounded" alt="Icon alt" />
 
-              <img class="icon-rounded" :src="block.image_rounded" alt="Icon alt" />
+        <div class="col-md-6 col-sm-12 position-relative cus-mb">
+          <img
+            class="wd-ipm position-relative z-2"
+            style="object-fit: cover; pointer-events: none"
+            :src="block.image"
+            :alt="block.image_alt"
+          />
+          <div
+            class="animation"
+            @mousemove="handleHover"
+            @mouseleave="resetTransform"
+          >
+            <img
+              style="top: 20px"
+              class="icon-blue_rounded position-absolute"
+              :style="imageStyle"
+              :src="block.image_blue_rounded"
+              :alt="block.image_alt"
+            />
+          </div>
+          <img
+            style="width: 124px; top: 2%; right: 0"
+            class="icon-rounded-two position-absolute z-2"
+            :src="block.image_double_rounded"
+            :alt="block.image_alt"
+          />
+
+          <img class="icon-rounded" :src="block.image_rounded" :alt="block.image_alt"
+          />
         </div>
       </div>
 
@@ -72,7 +95,8 @@ interface Props {
   dataBinding: any;
   block: any;
 }
-const { dataBinding, block } = defineProps<Props>();
+const props = defineProps<Props>();
+console.log(props.block);
 
 onMounted(() => {
   const observer = new IntersectionObserver(
@@ -121,18 +145,17 @@ const resetTransform = () => {
   x.value = 0;
   y.value = 0;
 };
-
 </script>
 
 <style lang="scss" scoped>
-.animation{
+.animation {
   top: 0;
   width: 636px;
   height: 100%;
   position: absolute;
 }
 
-.icon-blue_rounded{
+.icon-blue_rounded {
   width: 636px;
 }
 .title {
@@ -152,7 +175,7 @@ const resetTransform = () => {
 }
 .color-content {
   color: var(--color-text);
-  font-size:18px;
+  font-size: 18px;
   max-width: 515px;
   margin-bottom: 34px !important;
 }
@@ -175,37 +198,35 @@ const resetTransform = () => {
   left: -130px;
   z-index: 1;
 }
-@media (max-width: 1024px){
-  .my__container{
+@media (max-width: 1024px) {
+  .my__container {
     padding: 10px;
   }
- .title{
-  font-size: 32px !important;
-  margin-top: -70px;
-  margin-bottom: 34px !important;
-
- }
- .wd-ipm{
+  .title {
+    font-size: 32px !important;
+    margin-top: -70px;
+    margin-bottom: 34px !important;
+  }
+  .wd-ipm {
     width: 514px;
     height: 551px;
   }
-  .icon-line{
+  .icon-line {
     bottom: 2%;
   }
-  .icon-blue_rounded{
+  .icon-blue_rounded {
     top: 0 !important;
     margin-top: 40px;
     width: 572px;
     height: 511px;
   }
-   .color-content{
-     margin-bottom: 34px !important;
-     font-size: 16px;
-   }
-   .bg-img{
-    padding-bottom: 0 !important; 
+  .color-content {
+    margin-bottom: 34px !important;
+    font-size: 16px;
   }
-
+  .bg-img {
+    padding-bottom: 0 !important;
+  }
 }
 @media (max-width: 768px) {
   .title {
@@ -214,68 +235,65 @@ const resetTransform = () => {
     max-width: 350px;
     line-height: 48px;
   }
-  .wd-ipm{
+  .wd-ipm {
     width: 386px;
     height: 414px;
   }
-  .color-content{
+  .color-content {
     font-size: 16px;
     max-width: 340px;
     max-width: 394px;
     margin-bottom: 34px !important;
   }
-  .icon-line{
+  .icon-line {
     bottom: -7%;
     left: 22%;
   }
-  .icon-blue_rounded{
+  .icon-blue_rounded {
     top: -32px !important;
     width: 395px;
     height: 407px;
     left: 68px;
   }
-  .cus-title{
+  .cus-title {
     height: 434px !important;
   }
-  .bg-img{
-    padding-bottom: 0 !important; 
+  .bg-img {
+    padding-bottom: 0 !important;
   }
 }
-@media (max-width: 576px)
-{
-  .reverse-mb{
+@media (max-width: 576px) {
+  .reverse-mb {
     flex-direction: column-reverse;
   }
-  .cus-mb{
+  .cus-mb {
     margin-top: 28px;
     height: 422px;
   }
-  .title{
+  .title {
     max-width: 394px;
     text-align: center;
   }
-  .cus-title{
+  .cus-title {
     height: 100% !important;
   }
-  .cus-bt{
+  .cus-bt {
     display: block !important;
-     width: 394px;
-     justify-content: center;
-     height: 58px;
-     align-items: center;
+    width: 394px;
+    justify-content: center;
+    height: 58px;
+    align-items: center;
   }
-  .icon-line{
+  .icon-line {
     bottom: -24%;
     left: 18%;
   }
-  .pd-mb{
+  .pd-mb {
     margin: 1em 0em 1em 0em !important;
   }
-  .color-content{
+  .color-content {
     margin-bottom: 34px !important;
-      text-align: center;
-
+    text-align: center;
   }
 }
-
 </style>

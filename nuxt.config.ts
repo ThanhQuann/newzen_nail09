@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   },
 
   generate: {
-    routes: ['/','/blog/']
+    routes: ['/about','/booking','/browser-service','/contact','/eyelash-extension','/hair-removal','/','/services','/blog/']
   },
 
   app: {

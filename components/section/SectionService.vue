@@ -38,7 +38,7 @@
               <div
                 class="text-center d-flex flex-column justify-content-center align-items-center pt-3"
               >
-                <img class="img-cus" :src="item.img" alt="service" />
+                <img class="img-cus" :src="item.img" :alt="block.image_alt" />
                 <h3 class="fs-4 p-3">{{ item.title }}</h3>
                 <div class="p-2" v-html="item.desc"></div>
                 <NuxtLink class="btn-book fontMontserrat"

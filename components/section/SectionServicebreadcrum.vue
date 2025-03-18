@@ -14,7 +14,7 @@
       ></h1>
     </div>
 
-    <div class="background-overlay"></div>
+    <div :style="{backgroundColor: block.background_color}" class="background-overlay"></div>
   </section>
 </template>
 <!-- </div>     
@@ -40,7 +40,6 @@ console.log(props);
 }
 
 .background-overlay {
-  background-color: #fff;
   opacity: 0.23;
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
   height: 100%;

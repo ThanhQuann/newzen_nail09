@@ -14,7 +14,7 @@ content_blocks:
     status: true
     background_image: /images/hero-bg.png
     image: /images/hero-img.png
-    image_alt : ''
+    image_alt : 'image-alt'
     title: 'Experience the Magic of Lavilash Extensions'
     image_lines: /images/hero-lines.png
     image_lines_alt: ''
@@ -27,7 +27,7 @@ content_blocks:
       is_show: true
       open_new_tab: false
       text: 'Book Now'
-      link: '/#'
+      link: '/about'
       background_color: '#FCC5C0'
       color: '#fff'
       # ------------------Service-------------------------
@@ -39,17 +39,17 @@ content_blocks:
       - title: 'Classic Lashes'
         desc: 'Classic lashes are a type of eyelash extensions where one individual lash extension is glued onto one natural lash. This creates a natural, enhanced look by adding length and thickness to the lashes.'
         image: /images/hero-face.jpg
-        image_alt: ''
+        image_alt: 'image_alt'
 
       - title: 'Hybrid Lashes'
         desc: 'Hybrid lashes are a combination of classic and volume lash extensions. This technique involves applying a mix of individual lash extensions and handmade volume fans onto each natural lash, resulting in a more textured and full appearance.'
         image: /images/hero-face1.jpg
-        image_alt: ''
+        image_alt: 'image_alt'
 
       - title: 'Volume Lashes'
         desc: 'Volume lashes are a type of eyelash extensions where multiple thin lash extensions are fanned out and applied onto one natural lash, creating a full and dramatic effect. This technique is ideal for those who have sparse lashes or desire a more glamorous look.'
         image: /images/hero-face2.jpg
-        image_alt: ''
+        image_alt: 'image_alt'
     content: 'Transform Your Look with Lavilash’s Premium Eyelash <br> Services '
     button: 
       is_show: true
@@ -113,6 +113,7 @@ content_blocks:
     heading: 'Our Services'
     title: 'Popular Treatments'
     image: '/images/service-dots.png'
+    image_alt: 'image_alt' 
     list_service:
       - title: 'Lash Services'
         img: /images/hero-eye.png
@@ -140,8 +141,9 @@ content_blocks:
     status: true
     color: "#FCC5C0"
     background_color: '#C4C4C4'
-    desc : ' <b> Google </b>&nbsp rating score:&nbsp<b>4.7</b>&nbsp of 5,&nbspbased on &nbsp<b> 65 reviews </b>'
+    desc : '<b> Google </b>&nbsp rating score:&nbsp<b>4.7</b>&nbsp of 5,&nbspbased on &nbsp<b> 65 reviews </b>'
     background_image: /images/review_bg.png
+    
     image_double_heart: /images/hero-love.png
     image_leaf: /images/leaf-3.png
     image_logo: /images/Google-logo.png
@@ -152,37 +154,38 @@ content_blocks:
         time: '2023-05-22'
         star: 5
         desc: 'I love getting my lashes done here!! They sometimes offer deals that are worth checking out if you want a discount, but my girl Margarita is THE BEST!!!! I get soooo many compliments on my lashes, more than I ever have in the last 2 years of getting them checking out if you want a discount, but my girl Margarita is THE BEST!!!! I get soooo many compliments on my lashes, more than I ever have in the last 2 years of getting them! '
+        image_alt: 'image-alt'
 
       - image_acount: /images/hero-account1.png
         username: 'Isabella Monroe'
         time: '2023-05-22'
         star: 5
         desc: 'Alex is very thorough and does a great job with my lashes. I only go to him for my lashes! Lavilash Extension Salon is a boutique lash studio located in the heart of Boston, Massachusetts.'
-
+        image_alt: 'image-alt'
       - image_acount: /images/hero-account2.png
         username: 'Lauren Sikoski'
         time: '2023-04-19'
         star: 5
         desc: 'Great service great price overall amazing'
-
+        image_alt: 'image-alt'
       - image_acount: /images/hero-account3.png
         username: 'Robyn Denise'
         time: '2023-04-08'
         star: 5
         desc: 'Katie does a wonderful job! She’s friendly and has great attention to detail. I love my lashes!'  
-
+        image_alt: 'image-alt'
       - image_acount: /images/hero-account4.png
         username: 'Miki Matrician'
         time: '2023-04-08'
         star: 5
         desc: 'Katie is wonderful!'
-
+        image_alt: 'image-alt'
       - image_acount: /images/hero-account5.png
         username: 'Tara Reagan'
         time: '2023-04-04'
         star: 5
         desc: 'Amazing job on hybrid full set!'
-
+        image_alt: 'image-alt'
       - image_acount: /images/hero-account6.png
         username: 'Brianna'
         time: '2023-02-12'
@@ -194,7 +197,7 @@ content_blocks:
         time: '2023-01-28'
         star: 5
         desc: 'I love getting my lashes done here!! They sometimes offer deals that are worth checking out if you want a discount, but my girl Margarita is'
-
+        image_alt: 'image-alt'
       - image_acount: /images/hero-account8.png
         username: 'Sarah Torzillo'
         time: '2023-01-21'

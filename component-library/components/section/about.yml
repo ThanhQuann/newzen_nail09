@@ -10,10 +10,6 @@ spec:
 blueprint:
   status: true
   color: "#FCC5C0"
-  top_image_large: '-20%'
-  top_image_leaf: '-20%'
-  top_image_dot1: '-20%'
-  bottom_image_dot2: '-7%'
   list_img:
         image_large: /images/hero-face3.jpg
         image_large_alt: 'hero-face3'

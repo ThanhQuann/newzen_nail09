@@ -4,6 +4,8 @@
     "logo_alt": "Logo alt",
     "logo_close": "/images/xmark-solid.svg",
     "background_color" : "#FFFFFF",
+    "image_caret_down": "/images/caret-down-solid.png",
+    "alt_caret": "image_alt",
     "header_top":{
       "background_color" : "#183029",
       "phone" :{

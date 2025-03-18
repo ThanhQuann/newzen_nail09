@@ -3,7 +3,7 @@ spec:
   structures:
     - content_blocks
   label: Service Section
-  description: Ser Section
+  description: Service Section
   icon: "cottage"
 
 # Defines the structure of this component, as well as the default values

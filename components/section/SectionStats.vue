@@ -5,6 +5,7 @@
     :style="{ backgroundImage: `url(${block.image_background})` }"
     style="background-position: center"
     class="wh"
+    
   >
     <div style="width: 100%; height: 100%" class="">
       <div class="backgroundOverlay"></div>

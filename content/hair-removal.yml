@@ -12,9 +12,9 @@ content_blocks:
   - _block_name: section/servicebreadcrum
     status: true
     background_image: /images/hot-hair-removal-depilation-female-skin-routine-2022-11-09-06-50-09-utc-scaled.jpg
-    background_color: '#fcc5c0'
+    background_color: '#F8F8F8'
     title: 'Hair Removal'
-
+    
   - _block_name: section/treatmenthair
     status: true
     list_item:
@@ -29,7 +29,7 @@ content_blocks:
 
                   
     image_dot2: /images/dots-large2.png
-    image_dot2_alt: 'hero-dots-2'
+    image_alt: 'image-alt'
 
     
 
