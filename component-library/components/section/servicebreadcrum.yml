@@ -1,0 +1,36 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Starts Section
+  description: Starts Section
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  status: true
+  background_image: /images/eyelash-extension-procedure-1-2.jpg
+  background_color: '#fcc5c0'
+  heading: 'Eyelash Extension'
+  color: '#fff'
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  status:
+    label: Active Section
+    type: toggle
+  background_image:
+    label: Background Image
+    type: image
+  background_color:
+    label: Background Color
+    type: color
+  heading:
+    label: Section Heading
+    type: markdown
+  color:
+    label: Text Color
+    type: color

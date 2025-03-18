@@ -1,0 +1,69 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Service Section
+  description: Ser Section
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  status: true
+  color: "#FCC5C0"
+  background_color: '#C4C4C4'
+  desc : ' <b> Google </b>&nbsp rating score:&nbsp<b>4.7</b>&nbsp of 5,&nbspbased on &nbsp<b> 65 reviews </b>'
+  background_image: /images/review_bg.png
+  image_double_heart: /images/hero-love.png
+  image_leaf: /images/leaf-3.png
+  image_logo: /images/Google-logo.png
+  image_caret: /images/caret-down-solid.png
+  list_review:
+      - image_acount: /images/hero-account.png
+        username: 'Z V'
+        time: '2023-05-22'
+        star: 5
+        desc: 'I love getting my lashes done here!! They sometimes offer deals that are worth checking out if you want a discount, but my girl Margarita is THE BEST!!!! I get soooo many compliments on my lashes, more than I ever have in the last 2 years of getting them checking out if you want a discount, but my girl Margarita is THE BEST!!!! I get soooo many compliments on my lashes, more than I ever have in the last 2 years of getting them! '
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  status:
+    label: Active Section
+    type: toggle
+  color:
+    label: Section Color
+    type: color
+  background_color:
+    label: Background Color
+    type: color
+  desc:
+    label: Description
+    type: markdown
+  background_image:
+    label: Background Image
+    type: image
+  image_double_heart:
+    label: Double Heart Image
+    type: image
+  image_leaf:
+    label: Leaf Image
+    type: image
+  image_logo:
+    label: Logo Image
+    type: image
+  image_caret:
+    label: Caret Image
+    type: image
+  list_review[*].image_acount:
+    label: Reviewer Image
+    type: image
+  list_review[*].username:
+    label: Reviewer Name
+    type: markdown
+  list_review[*].time:
+    label: Review Date
+    type: text
+  list_review[*].star:
+    label: Star Rating
+    type: text
+  list_review[*].desc:
+    label: Review Text
+    type: markdown

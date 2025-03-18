@@ -9,10 +9,10 @@
 <div class="total my__container">
       <div class="head">
          <h2 style="padding-bottom:20px"  class="heading fs-1 fw-bold fontMontserrat fs-mb " v-html="block.title_lashTint"></h2>
-                 <p style="padding-bottom:14px;display:inline;" class="desc" v-html="block.desc_lashTint"></p>
+                 <div style="padding-bottom:14px;display:inline;" class="desc" v-html="block.desc_lashTint"></div>
        <div class="d-inline"  style="padding-bottom:14px;padding-left:5px;">
                      <NuxtLink class="desc" style="color:#FCC5C0;font-size:18px" :to="block.link">{{ block.desc_link }}</NuxtLink>
-                    <p style="padding-bottom:34px;font-size:18px"  class="desc fontMontserrat" v-html="block.desc2_lashTint"></p>
+                    <div style="padding-bottom:34px;font-size:18px"  class="desc fontMontserrat" v-html="block.desc2_lashTint"></div>
        </div>
       </div>
       <table class="table"> 
@@ -36,8 +36,8 @@
 <div class="total my__container">
       <div class="head">
          <h2 style="padding-bottom:20px"  class="heading fs-1 fw-bold fontMontserrat " v-html="block.title_other_service"></h2>
-         <p style="padding-bottom:14px" class="desc fontMontserrat" v-html="block.desc_other_service"></p>
-         <p style="padding-bottom:34px"  class="desc fontMontserrat" v-html="block.desc2_other_service"></p>
+         <div style="padding-bottom:14px" class="desc fontMontserrat" v-html="block.desc_other_service"></div>
+         <div style="padding-bottom:34px"  class="desc fontMontserrat" v-html="block.desc2_other_service"></div>
       </div>
       <table class="table"> 
         <thead>

@@ -1,0 +1,42 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Service Section
+  description: Ser Section
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  status: true
+  color: "#FCC5C0"
+  background_image: /images/hero-bg.png
+  background_color: '#fcc5c0'
+  image: /images/about_eyelush.png
+  image_alt : ''
+  title: 'About Us'
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  status:
+    label: Active Section
+    type: toggle 
+  color:
+    label: Section Color
+    type: color
+  background_image:
+    label: Background Image
+    type: image
+  background_color:
+    label: Background Color
+    type: color
+  image:
+    label: Main Image
+    type: image
+  image_alt:
+    label: Image Alt Text
+    type: text
+  title:
+    label: Section Title
+    type: markdown
+

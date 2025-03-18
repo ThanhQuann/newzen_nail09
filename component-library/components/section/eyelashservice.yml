@@ -1,0 +1,107 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Starts Section
+  description: Starts Section
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  status: true
+  title_lashTint: 'Lash RefillsLash Lifts & Tints'
+  image: /images/brow-tint.png
+  desc_lashTint: 'A lash L will dye and darken your natural lashes to create a balanced, effortless look.<br> A lash lift, or lash perm, will curl and set your natural lashes with a special perming solution and roller.'                  
+  desc2_lashTint: 'We use safe, high-quality, award-winning materials to enhance your natural beauty.'
+  desc_link: 'Click here to view our work..'
+  link: 'https://www.youtube.com/shorts/-62EiN8nscE'
+  service_lashTint: 'Serivce'
+  regular_lashTint: 'Time'
+  member_lashTint: 'Price'
+  list_item_lashTint:
+     -   title: 'Lash Tint'
+         price: '15 minutes'
+         member: '$40'
+
+  title_other_service: 'Supplemental Services'
+  image_other_service: /images/brow-tint.png
+  desc_other_service: 'Description of services. Include any common information regarding the procedures.'               
+  service_other_service: 'Service'
+  regular_other_service: 'Time'
+  member_other_service: 'Price'
+  list_item_other_service:
+     -   title: 'Lash Removal'
+         price: '15 minutes'
+         member: '$60'
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  status:
+    label: Active Section
+    type: toggle
+  title_lashTint:
+    label: Lash Tint & Lift Title
+    type: markdown
+  image:
+    label: Lash Tint Image
+    type: image
+  desc_lashTint:
+    label: Lash Tint & Lift Description
+    type: markdown
+  desc2_lashTint:
+    label: Additional Description
+    type: markdown
+  desc_link:
+    label: Description Link Text
+    type: markdown
+  link:
+    label: Video Link
+    type: text
+  service_lashTint:
+    label: Service Title
+    type: markdown
+  regular_lashTint:
+    label: Time Title
+    type: markdown
+  member_lashTint:
+    label: Price Title
+    type: markdown
+  list_item_lashTint[*].title:
+    label: Service Name
+    type: markdown
+  list_item_lashTint[*].price:
+    label: Service Time
+    type: text
+  list_item_lashTint[*].member:
+    label: Service Price
+    type: text
+  title_other_service:
+    label: Supplemental Services Title
+    type: markdown
+  image_other_service:
+    label: Supplemental Services Image
+    type: image
+  desc_other_service:
+    label: Supplemental Services Description
+    type: markdown
+  service_other_service:
+    label: Supplemental Service Title
+    type: markdown
+  regular_other_service:
+    label: Supplemental Service Time Title
+    type: markdown
+  member_other_service:
+    label: Supplemental Service Price Title
+    type: markdown
+  list_item_other_service[*].title:
+    label: Supplemental Service Name
+    type: markdown
+  list_item_other_service[*].price:
+    label: Supplemental Service Time
+    type: markdown
+  list_item_other_service[*].member:
+    label: Supplemental Service Price
+    type: markdown

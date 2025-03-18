@@ -9,31 +9,100 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   status: true
-  image: /images/banner.png
+  background_image: /images/hero-bg.png
+  image: /images/hero-img.png
   image_alt : ''
-  title: 'Organic Fresh Food'
-  content: 'Nơi mang lại hương vị thiên nhiên, hương vị của vùng đất đầy gió Lào và cát trắng đến với từng bữa ăn của bạn!'
+  title: 'Experience the Magic of Lavilash Extensions'
+  image_lines: /images/hero-lines.png
+  image_lines_alt: ''
+  image_rounded: /images/hero-rounded.png
+  image_rounded_alt: ''
+  image_blue_rounded: /images/hero-blue-rounded.png
+  image_double_rounded: /images/double-rounded.png
+  content: 'Transform Your Look with Lavilash’s Premium Eyelash Services '
   button: 
     is_show: true
     open_new_tab: false
-    text: 'XEM SẢN PHẨM'
+    text: 'Book Now'
     link: '/#'
-    background_color: '#84BD00'
+    background_color: '#FCC5C0'
+    color: '#fff'
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  image:
-    label: Banner
+  status:
+    label: Active Section
+    type: toggle
+  background_image:
+    label: Background Image
     type: image
+  image:
+    label: Main Image
+    type: image
+  image_alt:
+    label: Image Alt Text
+    type: text
   title:
     label: Title
     type: markdown
+  image_lines:
+    label: Decorative Lines Image
+    type: image
+  image_lines_alt:
+    label: Lines Image Alt Text
+    type: text
+  image_rounded:
+    label: Rounded Image
+    type: image
+  image_rounded_alt:
+    label: Rounded Image Alt Text
+    type: text
+  image_blue_rounded:
+    label: Blue Rounded Image
+    type: image
+  image_double_rounded:
+    label: Double Rounded Image
+    type: image
   content:
-    type: markdown
     label: Content
+    type: markdown
+  button.is_show:
+    label: Show Button
+    type: toggle
+  button.open_new_tab:
+    label: Open in New Tab
+    type: toggle
+  button.text:
+    label: Button Text
+    type: markdown
+  button.link:
+    label: Button Link
+    type: text
   button.background_color:
+    label: Button Background Color
     type: color
-    label: Background color
+  button.color:
+    label: Button Text Color
+    type: color
+
+    image:
+      label: Banner
+      type: image
+    title:
+      label: Title
+      type: markdown
+    content:
+      type: markdown
+      label: Content
+    button.text:
+      label: Button text
+      type: text
+    button.background_color:
+      type: color
+      label: Background color
+    button.link:
+      label: Button link
+      type: text

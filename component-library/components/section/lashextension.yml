@@ -1,0 +1,121 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Starts Section
+  description: Starts Section
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  status: true
+  title_lash: 'Lash Extensions'
+  image_caret_right: /images/caret-right1-solid.svg
+  image_caret_down: /images/caret-down-solid.svg
+  desc_lash: 'We include a free consultation on style, curve, length, and design to help you choose between our six different lash extension styles. Our lashes are made of safe, high-quality, and cruelty-free materials.'
+  list_item:
+    -   title: 'Classic'
+        desc: "<p>One extension is glued to one natural lash with 60-70% coverage.</p>"
+        desc1: "<p>Artist 1: $225<br>Artist 2: $250<br>Artist 3: $275</p>"
+  title_classic: 'Lash Refills'
+  desc_classic: 'Looking to refresh your lashes? Eyelash extensions can sometimes last up to 8 weeks, but it is common to get a touch up to maintain a full lash set.'
+  desc_classic2: 'For existing EYE LUSH clients, please make a refill appointment based on when you received your set.<br>New client refills are for clients coming from other salons.'
+  server_classic: 'Classic Refills'
+  list_item_classic:
+     -   title: 'After 1 Week'
+         desc: >-
+          <p>Artist 1: $225<br>Artist 2: $250<br>Artist 3: $275</p>
+  server_hybrid: 'Hybird Refills'
+  list_item_hybrid:
+     -   title: 'After 1 Week'
+         desc: >-
+          <p>Artist 1: $225<br>Artist 2: $250<br>Artist 3: $275</p>
+  server_volume: 'Volume Refills'
+  list_item_volume:
+     -   title: 'After 1 Week'
+         desc: >-
+          <p>Artist 1: $225<br>Artist 2: $250<br>Artist 3: $275</p>
+
+  server_megavolume: 'Mega Volume Refills'
+  list_item_megavolume:
+    -   title: 'After 1 Week'
+        desc: >-
+          <p>Artist 1: $225<br>Artist 2: $250<br>Artist 3: $275</p>
+# Overrides any fields in the blueprint when viewing this component in the component browser
+
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+
+_inputs:
+  status:
+    label: Active Section
+    type: toggle
+  title_lash:
+    label: Lash Extensions Title
+    type: markdown
+  image_caret_right:
+    label: Caret Right Image
+    type: image
+  image_caret_down:
+    label: Caret Down Image
+    type: image
+  desc_lash:
+    label: Lash Extensions Description
+    type: markdown
+  list_item[*].title:
+    label: Service Title
+    type: markdown
+  list_item[*].desc:
+    label: Service Description
+    type: markdown
+  list_item[*].desc1:
+    label: Service Pricing
+    type: markdown
+  title_classic:
+    label: Classic Lash Title
+    type: markdown
+  desc_classic:
+    label: Classic Lash Description
+    type: markdown
+  desc_classic2:
+    label: Classic Lash Additional Info
+    type: markdown
+  server_classic:
+    label: Classic Refills Title
+    type: markdown
+  list_item_classic[*].title:
+    label: Classic Refills Item Title
+    type: markdown
+  list_item_classic[*].desc:
+    label: Classic Refills Item Description
+    type: markdown
+  server_hybrid:
+    label: Hybrid Refills Title
+    type: markdown
+  list_item_hybrid[*].title:
+    label: Hybrid Refills Item Title
+    type: markdown
+  list_item_hybrid[*].desc:
+    label: Hybrid Refills Item Description
+    type: markdown
+  server_volume:
+    label: Volume Refills Title
+    type: markdown
+  list_item_volume[*].title:
+    label: Volume Refills Item Title
+    type: markdown
+  list_item_volume[*].desc:
+    label: Volume Refills Item Description
+    type: markdown
+  server_megavolume:
+    label: Mega Volume Refills Title
+    type: markdown
+  list_item_megavolume[*].title:
+    label: Mega Volume Refills Item Title
+    type: markdown
+  list_item_megavolume[*].desc:
+    label: Mega Volume Refills Item Description
+    type: markdown
+
+

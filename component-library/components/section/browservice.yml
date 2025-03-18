@@ -1,0 +1,61 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Starts Section
+  description: Starts Section
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  status: true
+  title: 'Brow Services'
+  image: /images/brow-tint.png
+  desc: 'Membership: $50 for 6 months / $75 for 12 months. <br> Please present your membership information in order to be eligible for the membership prices.'                  
+  desc2: 'Waxing services are not recommended for clients using Retin-A©, Accutane©, products containing Alpha Hydroxy©, or other skin thinning treatments.'
+  service: 'Service'
+  regular: 'Regular'
+  member: 'Membership'
+  list_item:
+    -   title: 'Brow Tints'
+        price: '$20'
+        member: '$'
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  status:
+    label: Active Section
+    type: toggle
+  title:
+    label: Section Title
+    type: markdown
+  image:
+    label: Section Image
+    type: image
+  desc:
+    label: Membership Details
+    type: markdown
+  desc2:
+    label: Waxing Precautions
+    type: markdown
+  service:
+    label: Service Column Title
+    type: markdown
+  regular:
+    label: Regular Price Column Title
+    type: markdown
+  member:
+    label: Membership Price Column Title
+    type: markdown
+  list_item[*].title:
+    label: Service Name
+    type: markdown
+  list_item[*].price:
+    label: Regular Price
+    type: text
+  list_item[*].member:
+    label: Membership Price
+    type: text

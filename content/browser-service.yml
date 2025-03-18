@@ -9,12 +9,11 @@ seo:
   no_index: false
 content_blocks:
 
-  - _block_name: section/eyelash
+  - _block_name: section/servicebreadcrum
     status: true
     background_image: /images/cropped-shot-of-woman-with-makeup-brush-for-eyebrows.jpg
     background_color: '#fcc5c0'
-    heading: 'Brow Services'
-    color: '#fff'
+    title: 'Brow Services'
     
   - _block_name: section/treatmentbrow
     status: true

@@ -61,11 +61,11 @@ content_blocks:
 # ------------------About-------------------------
   - _block_name: section/about
     status: true
-    color: "#FCC5C0"
     top_image_large: '-20%'
     top_image_leaf: '-20%'
     top_image_dot1: '-20%'
     bottom_image_dot2: '-7%'
+    color: "#FCC5C0"
     list_img:
         image_large: /images/hero-face3.jpg
         image_large_alt: 'hero-face3'
@@ -95,17 +95,15 @@ content_blocks:
     color: "#FCC5C0"
     background_color: "#FCC5C0"
     image_background: /images/hero-banner.jpg
-    list_count_stats:
-         stats_user: 1000
-         stats_trainning: 8
-         stats_treatment: 65
-         stats_product: 74
-
-    list_stats:
-         stats_user: 'Satisfied Users'
-         stats_trainning: 'Trained Experts'
-         stats_treatment: 'Nice Treatment'
-         stats_procuduct: 'Procedures'
+    list_item:
+      - title: Satisfied Users
+        count_up: 1000
+      - title: Trained Experts
+        count_up: 54
+      - title: Nice Treatment
+        count_up: 65
+      - title: Procedures
+        count_up: 74
 
 # ------------------service-------------------------
 

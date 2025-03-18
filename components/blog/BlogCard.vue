@@ -17,7 +17,7 @@
             <div class="d-flex align-items-start">
               <div style="border-color: var(--color-main-blog) !important;" class="border text-center p-2 w-fit font-weight-medium">
                 <h3 class="fs-6 text-color-blog">{{ renderDateMonth(data.date).date }}</h3>
-                <h3 class="fs-6 text-color-blog">{{ renderDateMonth(data.date).month }}</h3>
+                <h3 class="fs-6 text-color-blog" >{{ renderDateMonth(data.date).month }}</h3>
               </div>
               <div class="ms-2">
                 <NuxtLink class="text-reset text-decoration-none" :to="data._path">

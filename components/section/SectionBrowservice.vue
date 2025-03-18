@@ -8,23 +8,23 @@
     >
 <div class="total my__container">
       <div class="head">
-         <h2 style="padding-bottom:20px"  class="heading fs-1 fw-bold fontMontserrat " v-html="block.title"></h2>
-         <p style="padding-bottom:14px" class="desc fontMontserrat" v-html="block.desc"></p>
-         <p style="padding-bottom:34px"  class="desc fontMontserrat" v-html="block.desc2"></p>
+         <div style="padding-bottom:20px"  class="heading fs-1 fw-bold fontMontserrat " v-html="block.title"></div>
+         <div style="padding-bottom:14px" class="desc fontMontserrat" v-html="block.desc"></div>
+         <div style="padding-bottom:34px"  class="desc fontMontserrat" v-html="block.desc2"></div>
       </div>
       <table class="table"> 
         <thead>
           <tr >
-            <th class="fontMontserrat f-5 fw-semibold thead" v-html="block.service"></th>
-            <th class="fontMontserrat f-5 fw-semibold thead" style="color:#fff;background:#FCC5C0" v-html="block.regular"></th>
-            <th class="fontMontserrat f-5 fw-semibold thead" v-html="block.member"></th>
+            <th class="fontMontserrat f-5 fw-semibold thead" >{{  block.service }}</th>
+            <th class="fontMontserrat f-5 fw-semibold thead" style="color:#fff;background:#FCC5C0"> {{ block.regular }}</th>
+            <th class="fontMontserrat f-5 fw-semibold thead" >{{ block.member }}</th>
           </tr>
         </thead>
         <tbody class="tbody">
           <tr v-for="(item, index) in block.list_item" :key="index" :style="{ backgroundColor: index % 2 !== 0 ? 'hsla(0, 0%, 50.2%, .1019607843)' : '' }">
-            <td class="fontMontserrat" v-html="item.title"></td>
-            <td class="fontMontserrat" v-html="item.price"></td>
-            <td class="fontMontserrat" v-html="item.member"></td>
+            <td class="fontMontserrat" >{{ item.title  }}</td>
+            <td class="fontMontserrat" >{{ item.price  }}</td>
+            <td class="fontMontserrat" >{{ item.member  }}</td>
           </tr>
         </tbody>
       </table>

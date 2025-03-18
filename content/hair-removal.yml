@@ -9,12 +9,11 @@ seo:
   no_index: false
 content_blocks:
 
-  - _block_name: section/eyelash
+  - _block_name: section/servicebreadcrum
     status: true
     background_image: /images/hot-hair-removal-depilation-female-skin-routine-2022-11-09-06-50-09-utc-scaled.jpg
     background_color: '#fcc5c0'
-    heading: 'Hair Removal'
-    color: '#54595F'
+    title: 'Hair Removal'
 
   - _block_name: section/treatmenthair
     status: true
@@ -34,13 +33,13 @@ content_blocks:
 
     
 
-  - _block_name: section/Hairremoval
+  - _block_name: section/serviceitem
     status: true
-    title_face: 'Facial Hair Removal'
-    service_face: 'WAXING - FACE'
-    regular_face: 'REGULAR'
-    member_face: 'Membership'
-    list_item_face:
+    title: 'Facial Hair Removal'
+    service: 'WAXING - FACE'
+    regular: 'REGULAR'
+    member: 'Membership'
+    list_item:
      -   title: 'Brows/Tint'
          price: '$20'
          member: '$15'
@@ -65,11 +64,14 @@ content_blocks:
          price: '$50'
          member: '$35'
 
-    title_body: 'Body Hair Removal'
-    service_body: 'WAXING - FACE'
-    regular_body: 'REGULAR'
-    member_body: 'Membership'
-    list_item_body:
+
+  - _block_name: section/serviceitem
+    status: true
+    title: 'Body Hair Removal'
+    service: 'WAXING - FACE'
+    regular: 'REGULAR'
+    member: 'Membership'
+    list_item:
      -   title: 'Brows/Tint'
          price: '$20'
          member: '$15'
@@ -93,11 +95,14 @@ content_blocks:
      -   title: 'Face (lip,chin, brows, sideburns)'
          price: '$50'
          member: '$35' 
-    title_waxing_men: 'Men Waxing'
-    service_waxing_men: 'WAXING - FACE'
-    regular_waxing_men: 'REGULAR'
-    member_waxing_men: 'Membership'
-    list_item_waxing_men:
+   
+  - _block_name: section/serviceitem
+    status: true
+    title: 'Men Waxing'
+    service: 'WAXING - FACE'
+    regular: 'REGULAR'
+    member: 'Membership'
+    list_item:
      -   title: 'Back Wax with Shoulder'
          price: '$20'
          member: '$15'

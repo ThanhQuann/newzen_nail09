@@ -16,7 +16,6 @@ content_blocks:
     image: /images/service-image.jpg
     image_alt : ''
     title: 'Services'
-    height: '400px'
 
   - _block_name: section/service
     status: true

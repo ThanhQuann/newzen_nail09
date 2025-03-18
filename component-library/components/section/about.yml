@@ -1,0 +1,103 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: About Section
+  description: About Section
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  status: true
+  color: "#FCC5C0"
+  top_image_large: '-20%'
+  top_image_leaf: '-20%'
+  top_image_dot1: '-20%'
+  bottom_image_dot2: '-7%'
+  list_img:
+        image_large: /images/hero-face3.jpg
+        image_large_alt: 'hero-face3'
+        image_big: /images/hero-face4.jpg
+        image_big_alt: 'hero-face4'
+        image_leaf: /images/hero-leafs.png
+        image_leaf_alt: 'hero-leaf'
+        image_dot1: /images/hero-dots-1.png
+        image_dot1_alt: 'hero-dots-1'
+        image_dot2: /images/hero-dots-2.png
+        image_dot2_alt: 'hero-dots-2'
+  session: 'About Us'
+  title: 'Lavilash Extension Salon'
+  desc: 'Lavilash Extension Salon is a boutique lash studio located in the heart of Boston, Massachusetts. The salon offers a variety of high-quality eyelash extensions services, including classic, hybrid, and volume lash extensions. Their team of experienced lash technicians is dedicated to providing clients with customized lash designs that suit their individual needs and preferences.'
+  button: 
+      is_show: true
+      text: 'Learn More'
+      link: '/#'
+      background_color: '#FCC5C0'
+      color: '#fff'
+      open_new_tab: false
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  status:
+    status:
+    label: Active Section
+    type: toggle
+  color:
+    label: Color Section
+    type: color
+  list_img.image_large:
+    label: Image Large
+    type: image
+  list_img.image_large_alt:
+    label: Image Large Alt
+    type: text
+  list_img.image_big:
+    label: Image Big
+    type: image
+  list_img.image_big_alt:
+    label: Image Big Alt
+    type: text
+  list_img.image_leaf:
+    label: Image Leaf
+    type: image
+  list_img.image_leaf_alt:
+    label: Image Leaf Alt
+    type: text
+  list_img.image_dot1:
+    label: Image Dot 1
+    type: image
+  list_img.image_dot1_alt:
+    label: Image Dot 1 Alt
+    type: text
+  list_img.image_dot2:
+    label: Image Dot 2
+    type: image
+  list_img.image_dot2_alt:
+    label: Image Dot 2 Alt
+    type: text
+  session:
+    label: Session Title
+    type: markdown
+  title:
+    label: Section Title
+    type: markdown
+  desc:
+    label: Description
+    type: markdown
+  button.text:
+    label: Button Text
+    type: text
+  button.link:
+    label: Button Link
+    type: text
+  button.background_color:
+    label: Button Background Color
+    type: color
+  button.color:
+    label: Button Text Color
+    type: color
+  
+    
+ 

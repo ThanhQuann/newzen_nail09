@@ -1,0 +1,40 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Starts Section
+  description: Starts Section
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  status: true
+  list_item:
+    -   title: 'Brow Tints'
+        image: /images/brow-tint.png
+        desc: 'Enhance your brows to make them appear darker and fuller through dyeing them.'
+  image_dot1: /images/dots-large1.png
+  image_dot1_alt: 'hero-dots-2'
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  status:
+    label: Active Section
+    type: toggle
+  list_item[*].title:
+    label: Service Name
+    type: markdown
+  list_item[*].image:
+    label: Service Image
+    type: image
+  list_item[*].desc:
+    label: Service Description
+    type: markdown
+  image_dot1:
+    label: Decorative Image 1
+    type: image
+  image_dot1_alt:
+    label: Decorative Image 1 Alt Text
+    type: text

@@ -121,25 +121,32 @@
 
     "_inputs": {
       "background": {
-        "type": "color"
+        "type": "color",
+        "label": "Background color"
       },
       "background_copyright": {
-        "type": "color"
+        "type": "color",
+        "label": "Background color copyright"
       },
       "logo": {
-        "type": "image"
+        "type": "image",
+        "label": "Image icon"
       },
       "contact[*].image": {
-        "type": "image"
+        "type": "image",
+        "label": "Image contact"
       },
       "payment[*].image": {
-        "type": "image"
+        "type": "image",
+        "label": "Image payment"
       },
       "description": {
-        "type": "markdown"
+        "type": "markdown",
+        "label": "Description"
       },
       "text_bottom_footer": {
-        "type": "markdown"
+        "type": "markdown",
+        "label": "footer"
       }
     }
   }

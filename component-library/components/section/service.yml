@@ -1,0 +1,71 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Service Section
+  description: Ser Section
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  status: true
+  color: "#FCC5C0"
+  heading: 'Our Services'
+  title: 'Popular Treatments'
+  image: '/images/service-dots.png'
+  list_service:
+    - title: 'Lash Services'
+      img: /images/hero-eye.png
+      desc: 'We include a free consultation on style, curve, length, and design to help you choose between our six different lash extension styles.<br> Our lashes are made of safe, high-quality, and cruelty-free materials.'
+    
+    - title: 'Brows Services'
+      img: /images/hero-eye1.png
+      desc: 'Membership: $50 for 6 months / $75 for 12 months.<br> Please present your membership information in order to be eligible for the membership prices.'
+
+    - title: 'Hair Removal'
+      img: /images/hero-eye2.png
+      desc: 'Our salon provides professional full body waxing services for both men and women. We use both hard wax and soft wax (strip wax), giving you a long-lasting effect of stubble-free and smooth skin.'  
+  button: 
+    text: 'Learn more'
+    link: '/#'
+    background_color: '#FCC5C0'
+    color: '#fff'
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  status:
+    label: Active Section
+    type: toggle
+  color:
+    label: Color Section
+    type: color
+  heading:
+    label: Heading
+    type: markdown
+  title:
+    label: Section Title
+    type: markdown
+  image:
+    label: Section Image
+    type: image
+  list_service[*].title:
+    label: Service Title
+    type: markdown
+  list_service[*].img:
+    label: Service Image
+    type: image
+  list_service[*].desc:
+    label: Service Description
+    type: textarea
+  button.text:
+    label: Button Text
+    type: text
+  button.link:
+    label: Button Link
+    type: text
+  button.background_color:
+    label: Button Background Color
+    type: color
+  button.color:
+    label: Button Text Color
+    type: color

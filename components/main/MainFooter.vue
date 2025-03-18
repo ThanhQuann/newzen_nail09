@@ -10,7 +10,7 @@
           <div :style="{backgroundColor: footerData.background}"style="margin-bottom: -70px;" class="my__container position-relative form text-center">
            <div class="Experience d-flex flex-column justify-content-center align-items-center">
               <h2 class="fs-1 fw-bold p-2" v-html="footerData.title"></h2>
-              <p class="fz18 p-3" v-html="footerData.para"></p>
+              <div class="fz18 p-3" v-html="footerData.para"></div>
               <NuxtLink 
                 v-if="footerData.button.is_show" 
                 :to="footerData.button.link" :target="footerData.button.open_new_tab? '_blank' : '' "

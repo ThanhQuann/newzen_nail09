@@ -19,11 +19,11 @@
           class="title fs-1 fw-bold"
           v-html="block.title_lash"
         ></h2>
-        <p
+        <div
           class="desc"
           style="font-size: 18px; color: #333333"
           v-html="block.desc_lash"
-        ></p>
+        ></div>
       </div>
       <div class="parent">
         <div
@@ -72,25 +72,25 @@
       class="my__container"
     >
       <div style="padding-bottom: 34px" class="text-center">
-        <h2
+        <div
           style="padding: 15px"
           class="title fs-1 fw-bold"
           v-html="block.title_classic"
-        ></h2>
-        <p
+        ></div>
+        <div
           class="desc"
           style="font-size: 18px; color: #333333"
           v-html="block.desc_classic"
-        ></p>
-        <p
+        ></div>
+        <div
           class="desc"
           style="font-size: 18px; color: #333333"
           v-html="block.desc_classic2"
-        ></p>
+        ></div>
       </div>
       <div class="row">
         <div class="col-12 col-sm-6 col-lg-6">
-          <h2  class="fs-5 fw-bold font-mb"  v-html="block.server_classic"></h2>
+          <div  class="fs-5 fw-bold font-mb"  v-html="block.server_classic"></div>
           <div class="parent">
             <div
               v-for="(item, index) in block.list_item_classic"
@@ -125,7 +125,7 @@
         </div>
 
         <div class="col-12 col-sm-6 col-lg-6">
-          <h2  class="fs-5 fw-bold font-mb"  v-html="block.server_hybrid"></h2>
+          <div  class="fs-5 fw-bold font-mb"  v-html="block.server_hybrid"></div>
           <div class="parent">
             <div
               v-for="(item, index) in block.list_item_hybrid"
@@ -164,7 +164,7 @@
 
       <div class="row">
         <div class="col-12 col-sm-6 col-lg-6">
-          <h2 style="padding-top:20px" class="fs-5 fw-bold font-mb" v-html="block.server_volume"></h2>
+          <div style="padding-top:20px" class="fs-5 fw-bold font-mb" v-html="block.server_volume"></div>
           <div class="parent">
             <div
               v-for="(item, index) in block.list_item_volume"
@@ -199,7 +199,7 @@
         </div>
 
         <div class="col-12 col-sm-6 col-lg-6">
-          <h2 style="padding-top:20px" class="fs-5 fw-bold font-mb" v-html="block.server_megavolume"></h2>
+          <div style="padding-top:20px" class="fs-5 fw-bold font-mb" v-html="block.server_megavolume"></div>
           <div class="parent">
             <div
               v-for="(item, index) in block.list_item_megavolume"

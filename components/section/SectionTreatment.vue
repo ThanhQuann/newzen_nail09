@@ -12,7 +12,7 @@
                       <div  class="text-center d-flex flex-column justify-content-center align-items-center pt-3">
                             <img class="img-cus" :src="item.image" alt="service">
                             <h3 class="fs-4 p-3">{{ item.title.toUpperCase() }}</h3>
-                            <p class="p-2">{{ item.desc }}</p>
+                            <div class="p-2">{{ item.desc }}</div>
                     </div>
                 </div>
           </div>

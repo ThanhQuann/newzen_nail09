@@ -9,7 +9,7 @@
            <div>
               <div class="title mb-20" v-html="block.title" :style="{color: block.color}" style="font-size:20px"></div>
               <h2 style="line-height: 60px;" class="heading fs-1 fw-bold fontMontserrat mb-20"v-html="block.heading"></h2>
-              <p class="desc mb-20" v-html="block.desc"></p>
+              <div class="desc mb-20" v-html="block.desc"></div>
            </div>
             <div class="text-center content">
               <div class="" v-for="item, index in block.list_item" :key="index">

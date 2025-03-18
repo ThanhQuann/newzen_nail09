@@ -1,0 +1,109 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Treatment Section
+  description: Treatment Section
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+    status: true
+    background: '#fff'
+    list_treatment:
+      - title: 'Classic Lashes'
+        desc: 'Classic lashes are a type of eyelash extensions where one individual lash extension is glued onto one natural lash. This creates a natural, enhanced look by adding length and thickness to the lashes.'
+        image: /images/hero-face.jpg
+        image_alt: ''
+
+      - title: 'Hybrid Lashes'
+        desc: 'Hybrid lashes are a combination of classic and volume lash extensions. This technique involves applying a mix of individual lash extensions and handmade volume fans onto each natural lash, resulting in a more textured and full appearance.'
+        image: /images/hero-face1.jpg
+        image_alt: ''
+
+      - title: 'Volume Lashes'
+        desc: 'Volume lashes are a type of eyelash extensions where multiple thin lash extensions are fanned out and applied onto one natural lash, creating a full and dramatic effect. This technique is ideal for those who have sparse lashes or desire a more glamorous look.'
+        image: /images/hero-face2.jpg
+        image_alt: ''
+    content: 'Transform Your Look with Lavilash’s Premium Eyelash <br> Services '
+    button: 
+      is_show: true
+      open_new_tab: false
+      text: 'Book Now'
+      link: '/#'
+      background_color: '#FCC5C0'
+      color: '#fff'
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  status:
+    label: Active Section
+    type: toggle
+  background:
+    label: Background Color Section
+    type: color
+  list_treatment.title:
+   label: Title
+   type: markdown
+  list_treatment.desc:
+   label: Title
+   type: markdown
+   _inputs:
+  list_img.image_large:
+    label: Image Large
+    type: image
+  list_img.image_large_alt:
+    label: Image Large Alt
+    type: text
+  list_img.image_big:
+    label: Image Big
+    type: image
+  list_img.image_big_alt:
+    label: Image Big Alt
+    type: text
+  list_img.image_leaf:
+    label: Image Leaf
+    type: image
+  list_img.image_leaf_alt:
+    label: Image Leaf Alt
+    type: text
+  list_img.image_dot1:
+    label: Image Dot 1
+    type: image
+  list_img.image_dot1_alt:
+    label: Image Dot 1 Alt
+    type: text
+  list_img.image_dot2:
+    label: Image Dot 2
+    type: image
+  list_img.image_dot2_alt:
+    label: Image Dot 2 Alt
+    type: text
+
+  session:
+    label: Session Title
+    type: text
+  title:
+    label: Section Title
+    type: text
+  desc:
+    label: Description
+    type: textarea
+  button.text:
+    label: Button Text
+    type: text
+  button.link:
+    label: Button Link
+    type: text
+  button.background_color:
+    label: Button Background Color
+    type: color
+  button.color:
+    label: Button Text Color
+    type: color
+
+
+
+

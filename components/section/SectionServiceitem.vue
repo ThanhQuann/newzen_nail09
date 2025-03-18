@@ -8,27 +8,27 @@
     >
 <div class="total my__container">
       <div class="head">
-         <h2 style="padding-bottom:20px"  class="heading fs-1 fw-bold fontMontserrat " v-html="block.title_face"></h2>
+         <div style="padding-bottom:20px"  class="heading fs-1 fw-bold fontMontserrat " v-html="block.title"></div>
       </div>
       <table class="table"> 
         <thead>
           <tr >
-            <th class="fontMontserrat fw-normal thead"  v-html="block.service_face"></th>
-            <th class="fontMontserrat fw-normal thead"  v-html="block.regular_face"></th>
-            <th class="fontMontserrat fw-normal thead"  v-html="block.member_face"></th>
+            <th class="fontMontserrat fw-normal thead" >{{block.service  }}</th>
+            <th class="fontMontserrat fw-normal thead"  >{{block.regular  }}</th>
+            <th class="fontMontserrat fw-normal thead"  >{{ block.member }}</th>
           </tr>
         </thead>
         <tbody class="tbody">
-          <tr v-for="(item, index) in block.list_item_face" :key="index" :style="{ backgroundColor: index % 2 !== 0 ? 'hsla(0, 0%, 50.2%, .0705882353)' : '' }">
-            <td class="fontMontserrat f-14" v-html="item.title"></td>
-            <td class="fontMontserrat f-14" v-html="item.price"></td>
-            <td class="fontMontserrat f-14" v-html="item.member"></td>
+          <tr v-for="(item, index) in block.list_item" :key="index" :style="{ backgroundColor: index % 2 !== 0 ? 'hsla(0, 0%, 50.2%, .0705882353)' : '' }">
+            <td class="fontMontserrat f-14" >{{ item.title }}</td>
+            <td class="fontMontserrat f-14" >{{ item.price }}</td>
+            <td class="fontMontserrat f-14" >{{ item.member }}</td>
           </tr>
         </tbody>
       </table>
 </div>
 
-<div class="total my__container">
+<!-- <div class="total my__container">
       <div class="head">
          <h2 style="padding-bottom:20px"  class="heading fs-1 fw-bold fontMontserrat " v-html="block.title_body"></h2>
       </div>
@@ -71,7 +71,7 @@
         </tbody>
       </table>
 </div>
-   
+    -->
     </section>
   </template>
   <!-- </div>     

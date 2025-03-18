@@ -1,0 +1,36 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: About Hero
+  description: About Hero
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  status: true
+  background: "#FCC5C0"
+  heading: 'Team'
+  title: 'Our Mission'
+  content: >-
+    <div class="elementor-widget-container"><p>At Lavilash &amp; Brow, our mission is to provide exceptional beauty services while prioritizing the individuality and well-being of each client. We are driven by the following beliefs and commitments:</p><ol><li><p>Customized Designs: We believe that every client is unique, and our lash designs are tailored to enhance their distinct features and lifestyles. By understanding your preferences and needs, we create personalized looks that accentuate your natural beauty.</p></li><li><p>Health and Beauty: We understand the importance of maintaining the health of your natural lashes. Our promise is to take great care of your lashes, ensuring their vitality and lushness for years to come. We strive to strike the perfect balance between beauty and the well-being of your natural lashes.</p></li><li><p>Safe and Ethical Products: We are committed to using only safe and high-quality materials in our services. We proudly endorse cruelty-free products and refrain from using any materials sourced from animals. Your beauty should never come at the expense of our furry friends.</p></li><li><p>Knowledge and Skills: We believe that continuous learning and honing our skills are essential for delivering exceptional work. All our artists are licensed and certified in lash extensions. Furthermore, we prioritize ongoing education, providing our artists with opportunities to update and refine their skills. This ensures that they stay at the forefront of industry trends and techniques.</p></li><li><p>Quality Service Experience: Our definition of quality service extends beyond exceptional beauty treatments. We believe in creating an atmosphere of friendliness, fun, humility, kindness, and honesty. We are dedicated to offering the ultimate experience in beauty and well-being, striving for excellence in guest service.</p></li></ol><p>At Lavilash &amp; Brow, we are passionate about helping you achieve stunning lashes and brows while nurturing your individuality and overall satisfaction. It is our mission to surpass your expectations and leave you feeling beautiful, confident, and truly cared for.</p></div>
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  status:
+    label: Active Section
+    type: toggle
+  background:
+    label: Background Color Section
+    type: color
+  heading:
+    label: Heading Title
+    type: markdown
+  title:
+    label: Title Section
+    type: markdown
+  content:
+    label: Content Section
+    type: markdown

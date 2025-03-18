@@ -12,7 +12,6 @@ content_blocks:
 
   - _block_name: section/breadcum
     status: true
-    height: '439px'
     background_image: /images/hero-bg.png
     background_color: '#fcc5c0'
     image: /images/about_eyelush.png
@@ -55,19 +54,8 @@ content_blocks:
     background: "#FCC5C0"
     heading: 'Team'
     title: 'Our Mission'
-    desc_start: 'At Lavilash & Brow, our mission is to provide exceptional beauty services while prioritizing the individuality and well-being of each client. We are driven by the following beliefs and commitments:'
-    desc_end: 'At Lavilash & Brow, we are passionate about helping you achieve stunning lashes and brows while nurturing your individuality and overall satisfaction. It is our mission to surpass your expectations and leave you feeling beautiful, confident, and truly cared for.'
-    list_item:
-       -   para: 'Customized Designs: We believe that every client is unique, and our lash designs are tailored to enhance their distinct features and lifestyles. By understanding your preferences and needs, we create personalized looks that accentuate your natural beauty.'
-
-       -   para: 'Health and Beauty: We understand the importance of maintaining the health of your natural lashes. Our promise is to take great care of your lashes, ensuring their vitality and lushness for years to come. We strive to strike the perfect balance between beauty and the well-being of your natural lashes.'
- 
-       -   para: 'Safe and Ethical Products: We are committed to using only safe and high-quality materials in our services. We proudly endorse cruelty-free products and refrain from using any materials sourced from animals. Your beauty should never come at the expense of our furry friends.'
-
-       -   para: 'Knowledge and Skills: We believe that continuous learning and honing our skills are essential for delivering exceptional work. All our artists are licensed and certified in lash extensions. Furthermore, we prioritize ongoing education, providing our artists with opportunities to update and refine their skills. This ensures that they stay at the forefront of industry trends and techniques.'
-
-       -   para: 'Quality Service Experience: Our definition of quality service extends beyond exceptional beauty treatments. We believe in creating an atmosphere of friendliness, fun, humility, kindness, and honesty. We are dedicated to offering the ultimate experience in beauty and well-being, striving for excellence in guest service.'
-
+    content: >-
+      <div class="elementor-widget-container"><p>At Lavilash &amp; Brow, our mission is to provide exceptional beauty services while prioritizing the individuality and well-being of each client. We are driven by the following beliefs and commitments:</p><ol><li><p>Customized Designs: We believe that every client is unique, and our lash designs are tailored to enhance their distinct features and lifestyles. By understanding your preferences and needs, we create personalized looks that accentuate your natural beauty.</p></li><li><p>Health and Beauty: We understand the importance of maintaining the health of your natural lashes. Our promise is to take great care of your lashes, ensuring their vitality and lushness for years to come. We strive to strike the perfect balance between beauty and the well-being of your natural lashes.</p></li><li><p>Safe and Ethical Products: We are committed to using only safe and high-quality materials in our services. We proudly endorse cruelty-free products and refrain from using any materials sourced from animals. Your beauty should never come at the expense of our furry friends.</p></li><li><p>Knowledge and Skills: We believe that continuous learning and honing our skills are essential for delivering exceptional work. All our artists are licensed and certified in lash extensions. Furthermore, we prioritize ongoing education, providing our artists with opportunities to update and refine their skills. This ensures that they stay at the forefront of industry trends and techniques.</p></li><li><p>Quality Service Experience: Our definition of quality service extends beyond exceptional beauty treatments. We believe in creating an atmosphere of friendliness, fun, humility, kindness, and honesty. We are dedicated to offering the ultimate experience in beauty and well-being, striving for excellence in guest service.</p></li></ol><p>At Lavilash &amp; Brow, we are passionate about helping you achieve stunning lashes and brows while nurturing your individuality and overall satisfaction. It is our mission to surpass your expectations and leave you feeling beautiful, confident, and truly cared for.</p></div>
  
   # ------------------Review-------------------------
 
@@ -139,16 +127,14 @@ content_blocks:
 # ------------------Stats-------------------------
   - _block_name: section/stats
     status: true
-    color: "#FCC5C0"
-    background_color: "#FCC5C0"
     image_background: /images/hero-banner.jpg
-    list_count_stats:
-         stats_user: 100
-         stats_trainning: 54
-         stats_treatment: 65
-         stats_product: 74
-    list_stats:
-         stats_user: 'Satisfied Users'
-         stats_trainning: 'Trained Experts'
-         stats_treatment: 'Nice Treatment'
-         stats_procuduct: 'Procedures'
+    list_item:
+      - title: Satisfied Users
+        count_up: 100
+      - title: Trained Experts
+        count_up: 54
+      - title: Nice Treatment
+        count_up: 65
+      - title: Procedures
+        count_up: 74
+  

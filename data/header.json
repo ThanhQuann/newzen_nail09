@@ -84,26 +84,33 @@
     },
     "_inputs": {
       "icon": {
-        "type": "image"
+        "type": "image",
+        "label": "Image icon"
       },
       "logo": {
-        "type": "image"
+        "type": "image",
+        "label": "Image logo"
       },
       "search":{
         "type": "text",
         "label": "Placeholder"
       },
       "background_color": {
-        "type": "color"
+        "type": "color",
+        "label": "Color icon"
       },
       "header_top.background_color": {
         "type": "color"
+        ,
+        "label": "Background icon"
       },
       "header_top.phone.image": {
-        "type": "image"
+        "type": "image",
+        "label": "Phone Icon"
       },
       "header_top.social[*].image": {
-        "type": "image"
+        "type": "image",
+        "label": "Image Social"
       }
     }
   }
